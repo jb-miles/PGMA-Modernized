@@ -3,7 +3,7 @@
         "id": "matchiafdduration",
         "label": "Match against IAFD's recorded film/scene length",
         "type": "bool",
-        "default": "true"
+        "default": "false"
     },
     {
         "id": "matchsiteduration",
@@ -53,26 +53,26 @@
         "label": "Choose Poster Source and whether to download to Disk",
         "type": "enum",
         "values": ["Local - No", "External - No", "Local - Yes", "External - Yes"],
-        "default": "Local - No"
+        "default": "External - Yes"
     },
     {
         "id": "systemcollection",
         "label": "Create System Collections - IAFD?, Compilation?, Stacked?",
         "type": "bool",
-        "default": "true"
+        "default": "false"
     },
     {
         "id": "genrecollection",
         "label": "Create Film Genre Collections; Colour = Yes, No = Disabled",
         "type": "enum",
         "values": ["No", "Black", "Blue", "Green", "Indigo", "Red"],
-        "default": "Indigo"
+        "default": "No"
     },
     {
         "id": "countrycollection",
         "label": "Create Film Country Collections from Country of Origin and Cast/Director Nationality",
         "type": "bool",
-        "default": "true"
+        "default": "No"
     },
     {
         "id": "countrypostertype",

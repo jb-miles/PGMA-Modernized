@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # encoding=utf8
+# 2026-01-30: Expand release-date matching window, add local Plex token fallback, and switch metadata fetch to session JSON.
 '''
 General Functions found in all agents
                                                   Version History
@@ -6455,7 +6456,7 @@ def matchReleaseDate(siteReleaseDate, FILMDICT, UseTwoYearMatch=False, myAgent=A
 
     else:
         dx = abs((FILMDICT['CompareDate'] - siteReleaseDate).days)
-        dxMaximum = 731 if UseTwoYearMatch else 366               # 2 years if matching film year with IAFD and 1 year for Agent
+        dxMaximum = 1461 if UseTwoYearMatch else 1096               # 2 years if matching film year with IAFD and 1 year for Agent
         testReleaseDate = 'Failed' if dx > dxMaximum else 'Passed'
 
         log('UTILS :: {0:<29} {1}'.format('{0} Release Date'.format(myAgent), siteReleaseDate))
@@ -7724,6 +7725,13 @@ def setupAgentVariables(media):
             except Exception as e:
                 pass
 
+            if not prefPLEXTOKEN:
+                try:
+                    local_token_file = os.path.join(PlexSupportPath, '.LocalAdminToken')
+                    prefPLEXTOKEN = PlexLoadFile(local_token_file).strip()
+                except Exception as e:
+                    log('UTILS :: Error: retrieving Plex Token from .LocalAdminToken: {0}'.format(e))
+
         log('UTILS :: {0:<29} {1}'.format('\tPlex Token', prefPLEXTOKEN))
         continueSetup == True if prefPLEXTOKEN else False
 
@@ -7747,8 +7755,9 @@ def setupAgentVariables(media):
 
         # Plex Library, that media resides in
         try:
-            metadataURL = '{0}/library/metadata/{1}?X-Plex-Token={2}'.format(plexBaseURL, media.id, prefPLEXTOKEN)
-            JSon = JSON.ObjectFromURL(metadataURL, timeout=20, sleep=delay())
+            metadataURL = '{0}/library/metadata/{1}'.format(plexBaseURL, media.id)
+            response = pgmaSSN.get(metadataURL, timeout=20)
+            JSon = response.json()
             pgmaLIBRARYID = JSon.get('MediaContainer').get('librarySectionID')
             pgmaLIBRARYTITLE = JSon.get('MediaContainer').get('librarySectionTitle')
             log('UTILS :: {0:<29} {1}'.format('\t\tLibrary ID', pgmaLIBRARYID))

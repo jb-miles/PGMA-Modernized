@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # encoding=utf8
+# 2026-01-30: Add age-gate cookie handling, disable caching, and log gate detection.
 '''
 # AEBN - (IAFD)
                                                   Version History
@@ -47,6 +48,7 @@ def Start():
     ''' initialise process '''
     HTTP.CacheTime = CACHE_1WEEK
     HTTP.Headers['User-Agent'] = utils.getUserAgent()
+    HTTP.Headers['Cookie'] = 'ageGated=1'  # Bypass age verification gate
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 class AEBN(Agent.Movies):
@@ -135,9 +137,19 @@ class AEBN(Agent.Movies):
                     continue
 
                 try:
-                    html = HTML.ElementFromURL(searchQuery, timeout=20, sleep=utils.delay())
-                    filmsList = html.xpath('//div[@class="dts-collection-item dts-collection-item-movie"][@id]/div[contains(@id, "dtsImageOverlayContainer")]')
+                    html = HTML.ElementFromURL(searchQuery, timeout=20, sleep=utils.delay(), cacheTime=0, headers={'Cookie': 'ageGated=1'})
+                    filmsList = html.xpath('//div[contains(@class, "dts-collection-item-movie")][@id]/div[contains(@id, "dtsImageOverlayContainer")]')
                     if not filmsList:
+                        try:
+                            pageTitle = html.xpath('//title/text()')[0].strip()
+                            utils.log('SEARCH:: Page Title: {0}'.format(pageTitle))
+                        except:
+                            utils.log('SEARCH:: Page Title: (Unknown)')
+                        
+                        # Check for age gate specifically
+                        if html.xpath('//a[contains(@href, "avs/gate")]') or html.xpath('//form[contains(@action, "avs/gate")]'):
+                             utils.log('SEARCH:: DETECTED AGE GATE PAGE')
+
                         raise Exception('< No Films! >')
 
                     # if there is a list of films - check if there are further pages returned

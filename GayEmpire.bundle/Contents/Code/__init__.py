@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # encoding=utf8
+# 2026-01-30: Add age-confirmation cookie and bypass cache for search/detail requests.
 '''
 # GayEmpire (IAFD)
                                     Version History
@@ -54,6 +55,7 @@ def Start():
     ''' initialise process '''
     HTTP.CacheTime = CACHE_1WEEK
     HTTP.Headers['User-Agent'] = utils.getUserAgent()
+    HTTP.Headers['Cookie'] = 'ageConfirmed=true'  # Bypass age verification gate
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 class GayEmpire(Agent.Movies):
@@ -140,7 +142,7 @@ class GayEmpire(Agent.Movies):
                     continue
 
                 try:
-                    html = HTML.ElementFromURL(searchQuery, timeout=90, errors='ignore', sleep=utils.delay())
+                    html = HTML.ElementFromURL(searchQuery, timeout=90, errors='ignore', sleep=utils.delay(), cacheTime=0, headers={'Cookie': 'ageConfirmed=true'})
                     filmsList = html.xpath('.//div[@class="item-list"]/div[@class="row list-view-item"]')
                     filmsList = html.xpath('.//div[contains(@id, "_Item")]')
                     if not filmsList:
@@ -291,7 +293,7 @@ class GayEmpire(Agent.Movies):
                     utils.log(LOG_BIGLINE)
                     try:
                         utils.log('SEARCH:: {0:<29} {1}'.format('Reading Site URL page', filmURL))
-                        fhtml = HTML.ElementFromURL(FILMDICT['FilmURL'], sleep=utils.delay())
+                        fhtml = HTML.ElementFromURL(FILMDICT['FilmURL'], sleep=utils.delay(), cacheTime=0, headers={'Cookie': 'ageConfirmed=true'})
                         FILMDICT['FilmHTML'] = fhtml
                     except Exception as e:
                         utils.log('SEARCH:: Error reading Site URL page: {0}'.format(e))

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # encoding=utf8
+# 2026-01-30: Add site language constant for localization handling.
 '''
 # GayFetishandBDSM - (IAFD)
                                                   Version History
@@ -31,6 +32,9 @@ DATEFORMAT = '%Y%m%d'
 
 # dictionaries & Set for holding film variables, genres and countries
 FILMDICT = {}
+
+# Website Language
+SITE_LANGUAGE = 'en'
 
 # utils.log section separators
 LOG_BIGLINE = '-' * 140

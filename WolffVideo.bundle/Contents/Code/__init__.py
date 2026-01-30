@@ -2,6 +2,7 @@
 # pylint: disable=line-too-long
 # pylint: disable=W0702, W0703, C0103, C0410
 # encoding=utf8
+# 2026-01-30: Add SSL-bypass HTML fetch helper and use it for search/detail pages.
 '''
 # WolffVideo - (IAFD)
                                                   Version History
@@ -49,6 +50,32 @@ def Start():
     ''' initialise process '''
     HTTP.CacheTime = CACHE_1WEEK
     HTTP.Headers['User-Agent'] = utils.getUserAgent()
+
+# ----------------------------------------------------------------------------------------------------------------------------------
+def getHTMLElementFromURL(url, timeout=20):
+    '''
+    Custom function to fetch HTML with SSL verification disabled.
+    WolffVideo.com has an expired SSL certificate, so we need to bypass verification.
+    '''
+    import ssl
+    import urllib2
+    from lxml import html as lxmlhtml
+    
+    try:
+        # Create unverified SSL context
+        ssl_context = ssl.create_default_context()
+        ssl_context.check_hostname = False
+        ssl_context.verify_mode = ssl.CERT_NONE
+        
+        request = urllib2.Request(url)
+        request.add_header('User-Agent', utils.getUserAgent())
+        
+        response = urllib2.urlopen(request, timeout=timeout, context=ssl_context)
+        content = response.read()
+        return lxmlhtml.fromstring(content)
+    except Exception as e:
+        utils.log('AGENT :: SSL Bypass Error: {0}'.format(e))
+        raise
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 class WolffVideo(Agent.Movies):
@@ -132,7 +159,8 @@ class WolffVideo(Agent.Movies):
 
             utils.log('SEARCH:: Search Query: {0}'.format(searchQuery))
             try:
-                html = HTML.ElementFromURL(searchQuery, timeout=20, sleep=utils.delay())
+                utils.delay()  # Maintain delay for rate limiting
+                html = getHTMLElementFromURL(searchQuery, timeout=20)
                 # Finds the entire media enclosure
                 filmsList = html.xpath('//div[@class="movie_list_holder"]//a[@class="title_x"]')
                 if not filmsList:
@@ -184,7 +212,8 @@ class WolffVideo(Agent.Movies):
                 utils.log(LOG_BIGLINE)
                 try:
                     utils.log('SEARCH:: {0:<29} {1}'.format('Reading Site URL page', filmURL))
-                    fhtml = HTML.ElementFromURL(FILMDICT['FilmURL'], sleep=utils.delay())
+                    utils.delay()  # Maintain delay for rate limiting
+                    fhtml = getHTMLElementFromURL(FILMDICT['FilmURL'], timeout=20)
                     FILMDICT['FilmHTML'] = fhtml
                 except Exception as e:
                     utils.log('SEARCH:: Error reading Site URL page: {0}'.format(e))

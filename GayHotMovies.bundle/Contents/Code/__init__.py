@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # encoding=utf8
+# 2026-01-30: Add age-confirmation cookie, bypass cache, and log age-gate detection.
 '''
 # GayHotMovies (IAFD)
                                     Version History
@@ -46,6 +47,7 @@ def Start():
     ''' initialise process '''
     HTTP.CacheTime = CACHE_1WEEK
     HTTP.Headers['User-Agent'] = utils.getUserAgent()
+    HTTP.Headers['Cookie'] = 'ageConfirmed=true'  # Bypass age verification gate
 
 # ----------------------------------------------------------------------------------------------------------------------------------
 class GayHotMovies(Agent.Movies):
@@ -154,9 +156,18 @@ class GayHotMovies(Agent.Movies):
                 continue
 
             try:
-                html = HTML.ElementFromURL(searchQuery, timeout=90, errors='ignore', sleep=utils.delay())
+                html = HTML.ElementFromURL(searchQuery, timeout=90, errors='ignore', sleep=utils.delay(), cacheTime=0, headers={'Cookie': 'ageConfirmed=true'})
                 filmsList = html.xpath('//div[@class="item-preview-video"]')
                 if not filmsList:
+                    try:
+                        pageTitle = html.xpath('//title/text()')[0].strip()
+                        utils.log('SEARCH:: Page Title: {0}'.format(pageTitle))
+                    except:
+                        utils.log('SEARCH:: Page Title: (Unknown)')
+
+                    if html.xpath('//title[contains(text(), "Age Confirmation")]') or html.xpath('//form[contains(@action, "AgeConfirmation")]'):
+                        utils.log('SEARCH:: DETECTED AGE GATE PAGE')
+
                     raise Exception('< No Film Titles >')   # out of WHILE loop
 
                 # if there is a list of films - check if there are further pages returned
