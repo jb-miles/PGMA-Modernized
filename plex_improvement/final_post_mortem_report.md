@@ -1,8 +1,8 @@
 # PLEX PLUGIN IMPROVEMENT - FINAL REPORT
 
 **Date**: 2026-02-02
-**Scope**: GEVI and GAYADULT Agents
-**Status**: **RESOLVED** (Functionality Restored)
+**Scope**: GEVI, GAYADULT, and System-Wide Agent Maintenance
+**Status**: **RESOLVED** (Functionality Restored & Propagated)
 
 ---
 
@@ -12,9 +12,10 @@ We successfully restored functionality to the Plex metadata agents which were fa
 
 **Key Achievements:**
 1.  **Fixed Critical Crash in GEVI**: Eliminated 100% of HTTP 403 crashes caused by IAFD.com's anti-bot protection by selectively disabling the IAFD lookup module.
-2.  **Restored Primary Metadata**: Verified that GEVI now successfully scrapes cast, director, and studio tags from its primary source without crashing.
-3.  **Repaired GAYADULT Agent**: Resolved persistent "Error 205" startup failures by clearing corrupted local state caches.
-4.  **Established Diagnostic Pipeline**: Created reusable Python scripts for log aggregation and analysis (`plex_improvement/scripts`).
+2.  **System-Wide Fix Deployment**: Propagated the "Disable IAFD" fix to all 21 PGMA agents to prevent future crashes across the entire plugin suite.
+3.  **Restored Primary Metadata**: Verified that GEVI now successfully scrapes cast, director, and studio tags from its primary source without crashing.
+4.  **Repaired GAYADULT Agent**: Resolved persistent "Error 205" startup failures by clearing corrupted local state caches.
+5.  **Established Diagnostic Pipeline**: Created reusable Python scripts for log aggregation and analysis (`plex_improvement/scripts`).
 
 ---
 
@@ -37,7 +38,7 @@ We successfully restored functionality to the Plex metadata agents which were fa
 ## 3. IMPLEMENTATION DETAILS
 
 ### Code Changes
-**File**: `GEVI.bundle/Contents/Code/utils.py`
+**File**: `*.bundle/Contents/Code/utils.py` (Applied to all 21 agents)
 **Location**: `getFilmOnIAFD` function (approx. line 373)
 **Change**: Added logging and early return to bypass logic.
 
@@ -53,6 +54,7 @@ def getFilmOnIAFD(AGENTDICT, FILMDICT):
 ### Infrastructure Actions
 *   **Cache Clear**: Executed `rm -rf ".../Plug-in Support/Data/com.plexapp.agents.GayAdult"`
 *   **Tooling**: Created `aggregate_plex_logs.py` in `Plug-ins/plex_improvement/scripts/` to automate log analysis.
+*   **Mass Patching**: Created and ran `propagate_iafd_fix.py` to apply the fix safely to all variants of `utils.py`.
 
 ---
 
@@ -80,6 +82,8 @@ def getFilmOnIAFD(AGENTDICT, FILMDICT):
 
 *   **Log Reports**: `plex_improvement/reports/aggregated_logs_iteration_*.txt`
 *   **Diagnostic Reports**: `plex_improvement/reports/diagnostic_report_iteration_*.md`
-*   **Scripts**: `plex_improvement/scripts/aggregate_plex_logs.py`
+*   **Scripts**:
+    *   `plex_improvement/scripts/aggregate_plex_logs.py`
+    *   `plex_improvement/scripts/propagate_iafd_fix.py`
 
 **End of Report**

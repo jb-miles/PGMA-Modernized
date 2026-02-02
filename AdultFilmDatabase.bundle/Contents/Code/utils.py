@@ -371,6 +371,8 @@ def getFilmImages(imageType, imageLocation, whRatio, sceneAgent, thumborAddress,
 
 # -------------------------------------------------------------------------------------------------------------------------------
 def getFilmOnIAFD(AGENTDICT, FILMDICT):
+    log('UTILS :: IAFD Lookup Disabled to prevent 403 Errors.')
+    return
     ''' check IAFD web site for better quality thumbnails per movie'''
     romanPattern = '\(M{0,3}(CM|CD|D?C{0,3})?(XC|XL|L?X{0,3})?(IX|IV|V?I{0,3})?\)$'
     try:

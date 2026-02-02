@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # encoding=utf8
-# 2026-01-30: Expand release-date matching window, add local Plex token fallback, and switch metadata fetch to session JSON.
+# 2026-01-30: Expand release-date matching window and add local Plex token fallback.
 '''
 General Functions found in all agents
                                                   Version History
@@ -371,8 +371,6 @@ def getFilmImages(imageType, imageLocation, whRatio, sceneAgent, thumborAddress,
 
 # -------------------------------------------------------------------------------------------------------------------------------
 def getFilmOnIAFD(AGENTDICT, FILMDICT):
-    log('UTILS :: IAFD Lookup Disabled to prevent 403 Errors.')
-    return
     ''' check IAFD web site for better quality thumbnails per movie'''
     romanPattern = '\(M{0,3}(CM|CD|D?C{0,3})?(XC|XL|L?X{0,3})?(IX|IV|V?I{0,3})?\)$'
     try:
@@ -7757,9 +7755,8 @@ def setupAgentVariables(media):
 
         # Plex Library, that media resides in
         try:
-            metadataURL = '{0}/library/metadata/{1}'.format(plexBaseURL, media.id)
-            response = pgmaSSN.get(metadataURL, timeout=20)
-            JSon = response.json()
+            metadataURL = '{0}/library/metadata/{1}?X-Plex-Token={2}'.format(plexBaseURL, media.id, prefPLEXTOKEN)
+            JSon = JSON.ObjectFromURL(metadataURL, timeout=20, sleep=delay())
             pgmaLIBRARYID = JSon.get('MediaContainer').get('librarySectionID')
             pgmaLIBRARYTITLE = JSon.get('MediaContainer').get('librarySectionTitle')
             log('UTILS :: {0:<29} {1}'.format('\t\tLibrary ID', pgmaLIBRARYID))
