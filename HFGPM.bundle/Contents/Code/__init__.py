@@ -153,13 +153,12 @@ class HFGPM(Agent.Movies):
                 try:
                     filmEntry = film.xpath('./div[@class="bshead"]/div[@class="bshead"]/h1/a/text()')[0]
                     utils.log('SEARCH:: {0:<29} {1}'.format('Site Entry', filmEntry))
-                    filmEntry = filmEntry.partition(' - ') # converts to tuple
-                    if filmEntry[1] != ' - ':
-                        utils.log('SEARCH:: Error in Site Entry Format')
-                        utils.log(LOG_SUBLINE)
-                        continue
-                    filmStudio = filmEntry[0]
-                    filmTitle = filmEntry[2]
+                    if ' - ' in filmEntry:
+                        filmStudio, filmTitle = filmEntry.split(' - ', 1)
+                    else:
+                        # Some entries omit studio prefix; assume file studio and treat entire entry as title
+                        filmStudio = FILMDICT['Studio']
+                        filmTitle = filmEntry
                 except Exception as e:
                     utils.log('SEARCH:: Error getting Site Entry: {0}'.format(e))
                     utils.log(LOG_SUBLINE)
@@ -195,43 +194,40 @@ class HFGPM(Agent.Movies):
                     utils.log(LOG_SUBLINE)
                     continue
 
-                # Site Release Date, formatted as dd-mm-yyyy, hh:mm
+                # Site Release Date, formatted as dd-mm-yyyy, hh:mm (if present)
                 utils.log(LOG_BIGLINE)
                 try:
-                    filmreleasedate = film.xpath('./div[@class="base shortstory"]/div[@class="maincont"]/div/text()[contains(.,"Release Year:")]')[0].strip()
+                    filmreleasedate = film.xpath('.//div[@class="maincont"]/div/text()[contains(.,"Release Year:")]')[0].strip()
                     utils.log('SEARCH:: {0:<29} {1}'.format('Site URL Release Date', filmreleasedate))
-                    try:
-                        releaseDate = datetime.strptime(filmreleasedate, DATEFORMAT)
-                        utils.matchReleaseDate(releaseDate, FILMDICT)
-                        vReleaseDate = releaseDate
-                    except Exception as e:
-                        if FILMDICT['Year']:
-                            utils.log(LOG_SUBLINE)
-                            continue
-                except:
-                    utils.log('SEARCH:: Error getting Site URL Release Date: Default to Filename Date')
+                    releaseDate = datetime.strptime(filmreleasedate, DATEFORMAT)
+                    utils.matchReleaseDate(releaseDate, FILMDICT)
+                    vReleaseDate = releaseDate
+                except Exception:
                     vReleaseDate = FILMDICT['CompareDate'] if FILMDICT['CompareDate'] else None
 
-                # Site Film Duration - formatted as 99h 99mn 99sc 999ms 
+                # Site Film Duration - formatted as HH:MM:SS if present
                 utils.log(LOG_BIGLINE)
                 matchedDuration = False
                 vDuration = FILMDICT['Duration']
                 try:
-                    filmduration = html.xpath('./div[@class="base shortstory"]/div[@class="maincont"]/div/text()[contains(.,"mn ")]')[0].strip()
-                    durationM = filmduration.partition('mn ')
-                    durationH = filmduration.partition('h ')
-                    duration = int(durationH[0]) * 60 + int(durationM[1])
-                    duration = duration * 60                                                         # convert to seconds
-                    duration = datetime.fromtimestamp(duration)
-                    utils.log('SEARCH:: {0:<29} {1}'.format('Site Film Duration', duration.strftime('%H:%M:%S')))
-                    try:
-                        utils.matchDuration(duration, AGENTDICT, FILMDICT)
-                        matchedDuration = True
-                        vDuration = duration
-                    except Exception as e:
-                        utils.log('SEARCH:: Error matching Site Film Duration: {0}'.format(e))
-                except Exception as e:
-                    utils.log('SEARCH:: Error getting Site Film Duration')
+                    main_lines = film.xpath('.//div[@class="maincont"]/div//text()')
+                    main_lines = [x.strip() for x in main_lines if x.strip()]
+                    if 'Duration:' in main_lines:
+                        idx_dur = main_lines.index('Duration:')
+                        filmduration = main_lines[idx_dur + 1] if idx_dur + 1 < len(main_lines) else ''
+                        if filmduration and ':' in filmduration:
+                            hours, minutes, seconds = filmduration.split(':')
+                            duration = int(hours) * 3600 + int(minutes) * 60 + int(seconds)
+                            duration = datetime.fromtimestamp(duration)
+                            utils.log('SEARCH:: {0:<29} {1}'.format('Site Film Duration', duration.strftime('%H:%M:%S')))
+                            try:
+                                utils.matchDuration(duration, AGENTDICT, FILMDICT)
+                                matchedDuration = True
+                                vDuration = duration
+                            except Exception as e:
+                                utils.log('SEARCH:: Error matching Site Film Duration: {0}'.format(e))
+                except Exception:
+                    pass
 
                 if matchedDuration is False and AGENTDICT['prefMATCHSITEDURATION'] is True:
                     utils.log(LOG_SUBLINE)

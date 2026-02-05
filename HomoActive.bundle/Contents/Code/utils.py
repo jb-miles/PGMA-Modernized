@@ -196,6 +196,25 @@ def getCast(agntCastList, AGENTDICT, FILMDICT):
     if not agntCastList and 'Cast' not in FILMDICT: # nowt to do
         raise Exception('< No Cast Found! >')
 
+    if not AGENTDICT.get('prefUSEIAFD', False):
+        log('UTILS :: IAFD disabled: Using agent cast only')
+        castDict = {}
+        for castName in agntCastList:
+            castDict[castName] = {
+                'Alias': [],
+                'Awards': [],
+                'Bio': {},
+                'CompareName': '',
+                'CompareAlias': [],
+                'Films': [],
+                'Nationality': '',
+                'Photo': AGENTDICT['pgmaNOCASTPOSTER'],
+                'RealName': castName,
+                'Role': '',
+                'URL': ''
+            }
+        return castDict
+
     # clean up the Cast List make a copy then clear
     agntCastList = [x.split('(')[0].strip() for x in agntCastList]
     agntCastSet = {x.replace("St.", 'St ').replace("'s", '').replace('.', '') for x in agntCastList}      # remove all 's and initial dots from and duplicates
@@ -240,6 +259,25 @@ def getDirectors(agntDirectorList, AGENTDICT, FILMDICT):
 
     if not agntDirectorList and 'Directors' not in FILMDICT: # nowt to do
         raise Exception('< No Directors Found! >')
+
+    if not AGENTDICT.get('prefUSEIAFD', False):
+        log('UTILS :: IAFD disabled: Using agent directors only')
+        directorDict = {}
+        for directorName in agntDirectorList:
+            directorDict[directorName] = {
+                'Alias': [],
+                'Awards': [],
+                'Bio': {},
+                'CompareName': '',
+                'CompareAlias': [],
+                'Films': [],
+                'Nationality': '',
+                'Photo': AGENTDICT['pgmaNODIRECTORPOSTER'],
+                'RealName': directorName,
+                'Role': '',
+                'URL': ''
+            }
+        return directorDict
 
     # clean up the Director List
     agntDirectorList = [x.split('(')[0].strip() for x in agntDirectorList]                                          # remove AKA part of name eg James Dean (J. Deano) = James Dean
@@ -1148,10 +1186,21 @@ def getSiteInfoAdultFilmDatabase(AGENTDICT, FILMDICT, **kwargs):
         #   1.  Synopsis
         log(LOG_SUBLINE)
         try:
-            htmlsynopsis = html.xpath('//p[@itemprop="description"]/text()')
-            synopsis = '\n'.join(htmlsynopsis).strip()
-            siteInfoDict['Synopsis'] = synopsis
-            WrapText('Synopsis', synopsis)
+            main_lines = html.xpath('//div[@class="base fullstory"]/div[@class="maincont clr"]//div//text()')
+            main_lines = [x.strip() for x in main_lines if x and x.strip()]
+            # drop title if present
+            if main_lines and main_lines[0] == html.xpath('//h1/text()')[0].strip():
+                main_lines = main_lines[1:]
+            # build synopsis until metadata labels
+            stop_labels = set(['Length:', 'Duration:', 'Video:', 'Audio:', 'single file'])
+            synopsis_parts = []
+            for line in main_lines:
+                if line in stop_labels or line.endswith(':'):
+                    break
+                synopsis_parts.append(line)
+            synopsis = ' '.join(synopsis_parts).strip()
+            siteInfoDict['Synopsis'] = synopsis if synopsis else ' '
+            WrapText('Synopsis', siteInfoDict['Synopsis'])
 
         except Exception as e:
             siteInfoDict['Synopsis'] = ' '
@@ -1769,16 +1818,21 @@ def getSiteInfoAVEntertainments(AGENTDICT, FILMDICT, **kwargs):
         if kwDuration is None:
             log(LOG_SUBLINE)
             try:
-                htmlduration = html.xpath('//div[@class="single-info"]/span[@class="title" and text()="Play Time"]/following-sibling::span//text()')[0].strip()
-                htmlduration = re.sub('Apx. | Mins| Min', '', htmlduration)
-                htmlduration = re.sub('Hrs |Hr ', ':', htmlduration)
-                htmlduration = htmlduration.split(':')                                                                # split into hr, mins
-                htmlduration = [int(x) for x in htmlduration]                                                         # convert to integer
-                duration = htmlduration[0] * 60 + htmlduration[1] if len(htmlduration) == 2 else htmlduration[0]      # convert to minutes
-                duration = duration * 60                                                                              # convert to seconds
-                duration = datetime.fromtimestamp(duration)
-                siteInfoDict['Duration'] = duration
-                log('UTILS :: {0:<29} {1}'.format('Duration', duration.strftime('%H:%M:%S')))
+                main_lines = html.xpath('//div[@class="base fullstory"]/div[@class="maincont clr"]//div//text()')
+                main_lines = [x.strip() for x in main_lines if x and x.strip()]
+                if 'Duration:' in main_lines:
+                    idx_dur = main_lines.index('Duration:')
+                    htmlduration = main_lines[idx_dur + 1] if idx_dur + 1 < len(main_lines) else ''
+                    if htmlduration and ':' in htmlduration:
+                        hours, minutes, seconds = htmlduration.split(':')
+                        duration = int(hours) * 3600 + int(minutes) * 60 + int(seconds)
+                        duration = datetime.fromtimestamp(duration)
+                        siteInfoDict['Duration'] = duration
+                        log('UTILS :: {0:<29} {1}'.format('Duration', duration.strftime('%H:%M:%S')))
+                    else:
+                        siteInfoDict['Duration'] = FILMDICT['Duration']
+                else:
+                    siteInfoDict['Duration'] = FILMDICT['Duration']
 
             except Exception as e:
                 siteInfoDict['Duration'] = FILMDICT['Duration']
@@ -4081,19 +4135,21 @@ def getSiteInfoHFGPM(AGENTDICT, FILMDICT, **kwargs):
         #   1.  Synopsis
         log(LOG_SUBLINE)
         try:
-            htmlsynopsis = html.xpath('//div[@class="base fullstory"]/div[@class="maincont clr"]//div[@id]/node()')
-            htmlsynopsis = [x for x in htmlsynopsis if len(x) > 1]
-            tempsynopsis = '\n'.join(htmlsynopsis)
-            tempsynopsis = tempsynopsis.split('\n')
-            synopsisList = []
-            for item in tempsynopsis:
-                if 'MiB' in item or 'GiB' in item:
+            main_lines = html.xpath('//div[@class="base fullstory"]/div[@class="maincont clr"]//div//text()')
+            main_lines = [x.strip() for x in main_lines if x and x.strip()]
+            # drop title if present
+            if main_lines and main_lines[0] == html.xpath('//h1/text()')[0].strip():
+                main_lines = main_lines[1:]
+            # build synopsis until metadata labels
+            stop_labels = set(['Length:', 'Duration:', 'Video:', 'Audio:', 'single file'])
+            synopsis_parts = []
+            for line in main_lines:
+                if line in stop_labels or line.endswith(':'):
                     break
-                synopsisList.append(item)
-
-            synopsis = '\n'.join(synopsisList)
-            siteInfoDict['Synopsis'] = synopsis
-            WrapText('Synopsis', synopsis)
+                synopsis_parts.append(line)
+            synopsis = ' '.join(synopsis_parts).strip()
+            siteInfoDict['Synopsis'] = synopsis if synopsis else ' '
+            WrapText('Synopsis', siteInfoDict['Synopsis'])
 
         except Exception as e:
             siteInfoDict['Synopsis'] = ' '
@@ -4239,14 +4295,21 @@ def getSiteInfoHFGPM(AGENTDICT, FILMDICT, **kwargs):
         if kwDuration is None:
             log(LOG_SUBLINE)
             try:
-                htmlduration = html.xpath('./div[@class="base shortstory"]/div[@class="maincont"]/div/text()[contains(.,"mn ")]')[0].strip()
-                durationM = htmlduration.partition('mn ')
-                durationH = htmlduration.partition('h ')
-                duration = int(durationH[0]) * 60 + int(durationM[1])
-                duration = duration * 60                                                                              # convert to seconds
-                duration = datetime.fromtimestamp(duration)
-                siteInfoDict['Duration'] = duration
-                log('UTILS :: {0:<29} {1}'.format('Duration', duration.strftime('%H:%M:%S')))
+                main_lines = html.xpath('//div[@class="base fullstory"]/div[@class="maincont clr"]//div//text()')
+                main_lines = [x.strip() for x in main_lines if x and x.strip()]
+                if 'Duration:' in main_lines:
+                    idx_dur = main_lines.index('Duration:')
+                    htmlduration = main_lines[idx_dur + 1] if idx_dur + 1 < len(main_lines) else ''
+                    if htmlduration and ':' in htmlduration:
+                        hours, minutes, seconds = htmlduration.split(':')
+                        duration = int(hours) * 3600 + int(minutes) * 60 + int(seconds)
+                        duration = datetime.fromtimestamp(duration)
+                        siteInfoDict['Duration'] = duration
+                        log('UTILS :: {0:<29} {1}'.format('Duration', duration.strftime('%H:%M:%S')))
+                    else:
+                        siteInfoDict['Duration'] = FILMDICT['Duration']
+                else:
+                    siteInfoDict['Duration'] = FILMDICT['Duration']
 
             except Exception as e:
                 siteInfoDict['Duration'] = FILMDICT['Duration']
@@ -7471,6 +7534,7 @@ def setupAgentVariables(media):
                 prefPLEXTOKEN = Prefs['plextoken']                        # Preferences, plex token
                 prefPREFIXGENRE = Prefs['prefixgenre']                    # prefix genres with agent sexuality type - useful for mixed content plex servers
                 prefMATCHIAFDDURATION = Prefs['matchiafdduration']        # Match against IAFD Duration value
+                prefUSEIAFD = Prefs['useiafd']                            # Use IAFD for cast/director matching
                 prefMATCHSITEDURATION = Prefs['matchsiteduration']        # Match against Site Duration value
                 prefPOSTERSOURCEDOWNLOAD = Prefs['postersourcedownload']  # Down film poster to disk, (renamed as film title + image extension)
                 prefPREFIXLEGEND = Prefs['prefixlegend']                  # place cast legend at start of summary or end
@@ -7850,6 +7914,7 @@ def setupAgentVariables(media):
                     'prefPREFIXGENRE': prefPREFIXGENRE,
                     'prefPREFIXLEGEND': prefPREFIXLEGEND,
                     'prefUSEBACKGROUNDART': prefUSEBACKGROUNDART,
+                    'prefUSEIAFD': prefUSEIAFD,
                     'pgmaAGENTPOSTER': pgmaAGENTPOSTER,
                     'pgmaCASTFACEFOLDER': pgmaCASTFACEFOLDER,
                     'pgmaCASTPOSTERFOLDER': pgmaCASTPOSTERFOLDER,

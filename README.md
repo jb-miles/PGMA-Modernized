@@ -18,6 +18,12 @@ I am currently executing a 5-phase modernization strategy to fix the broken agen
 2.  **Repair Broken Scrapers:** Website structure changes have broken metadata extraction for most agents (currently seeing ~94% failure rates). I am systematically updating scrapers to match current website HTML.
 3.  **Better Enrichment:** I am implementing GEVI (Primary) and WayBig (Secondary) as superior alternatives to IAFD for cast and director metadata.
 
+## Progress To Date
+
+- GayWorld scraper repaired to avoid `/clips/`, match via movie page `h1`, and skip non-movie pages missing required metadata.
+- HFGPM scraper repaired for search parsing, duration, release date, and synopsis extraction.
+- IAFD dependency disable preference (`useiafd`) propagated across IAFD-using bundles with guarded lookups in `utils.py`.
+
 ## Installation
 
 Note: Changes are frequently made to Preferences. When you download and install a new release, you may need to reset preferences.
