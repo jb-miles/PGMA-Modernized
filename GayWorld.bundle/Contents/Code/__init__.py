@@ -180,9 +180,12 @@ class GayWorld(Agent.Movies):
                     pageTitle = fhtml.xpath('//main//h1/text()')
                     pageTitle = pageTitle[0].strip() if pageTitle else ''
                     titleToMatch = pageTitle if pageTitle else siteTitle
-                    utils.matchTitle(titleToMatch, FILMDICT)
                 except Exception as e:
                     utils.log('SEARCH:: Error getting Site Title: {0}'.format(e))
+                    utils.log(LOG_SUBLINE)
+                    continue
+
+                if not utils.matchTitle(titleToMatch, FILMDICT):
                     utils.log(LOG_SUBLINE)
                     continue
 

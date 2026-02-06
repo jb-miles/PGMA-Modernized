@@ -154,9 +154,12 @@ class HomoActive(Agent.Movies):
                     filmTitle = film.xpath('./a/@title')[0]
                     filmTitle = re.sub(ur' (dvd|download).*$', '', filmTitle, flags=re.IGNORECASE)
                     filmTitle = filmTitle.split('(')[0].strip()
-                    utils.matchTitle(filmTitle, FILMDICT)
                 except Exception as e:
                     utils.log('SEARCH:: Error getting Site Title: {0}'.format(e))
+                    utils.log(LOG_SUBLINE)
+                    continue
+
+                if not utils.matchTitle(filmTitle, FILMDICT):
                     utils.log(LOG_SUBLINE)
                     continue
 

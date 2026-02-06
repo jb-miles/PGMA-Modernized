@@ -231,9 +231,12 @@ class QueerClick(Agent.Movies):
                     pattern = ur'[^a-zA-Z0-9] [A-Z0-9!% ]*[!|%]$'           # pattern start with Hyphen followed by Capital letters,%,! but has to end with exclamation or percent
                     matched = re.search(pattern, filmTitle, re.UNICODE)     # match against whole string
                     filmTitle = re.sub(pattern, '', filmTitle).strip() if matched else filmTitle
-                    utils.matchTitle(filmTitle, FILMDICT)
                 except Exception as e:
                     utils.log('SEARCH:: Error getting Site Title: {0}'.format(e))
+                    utils.log(LOG_SUBLINE)
+                    continue
+
+                if not utils.matchTitle(filmTitle, FILMDICT):
                     utils.log(LOG_SUBLINE)
                     continue
 

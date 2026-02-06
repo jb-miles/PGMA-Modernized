@@ -153,9 +153,12 @@ class GayMovie(Agent.Movies):
                 # Site Title
                 try:
                     filmTitle = film.xpath('.//div/div/h2/a/text()')[0]
-                    utils.matchTitle(filmTitle, FILMDICT)
                 except Exception as e:
                     utils.log('SEARCH:: Error getting Site Title: {0}'.format(e))
+                    utils.log(LOG_SUBLINE)
+                    continue
+
+                if not utils.matchTitle(filmTitle, FILMDICT):
                     utils.log(LOG_SUBLINE)
                     continue
 

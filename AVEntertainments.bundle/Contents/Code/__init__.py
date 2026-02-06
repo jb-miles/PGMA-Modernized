@@ -161,9 +161,12 @@ class AVEntertainments(Agent.Movies):
                 # Site Title
                 try:
                     filmTitle = film.xpath('./div/p[@class="product-title"]/a/text()')[0].split('(')[0].strip()
-                    utils.matchTitle(filmTitle, FILMDICT)
                 except Exception as e:
                     utils.log('SEARCH:: Error getting Site Title: {0}'.format(e))
+                    utils.log(LOG_SUBLINE)
+                    continue
+
+                if not utils.matchTitle(filmTitle, FILMDICT):
                     utils.log(LOG_SUBLINE)
                     continue
 

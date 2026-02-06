@@ -117,9 +117,13 @@ class GEVIScenes(Agent.Movies):
         if process is True:
             try:
                 siteTitle = html.xpath('//section/h1/text()')[0].strip()
-                utils.matchTitle(siteTitle, FILMDICT)
             except Exception as e:
                 utils.log('SEARCH:: Error getting Site Title: {0}'.format(e))
+                utils.log(LOG_SUBLINE)
+                process = False
+
+        if process is True:
+            if not utils.matchTitle(siteTitle, FILMDICT):
                 utils.log(LOG_SUBLINE)
                 process = False
 

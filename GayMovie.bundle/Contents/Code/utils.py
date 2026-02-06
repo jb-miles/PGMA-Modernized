@@ -6608,7 +6608,7 @@ def matchTitle(filmTitle, FILMDICT, myAgent=AGENT):
     log('UTILS :: {0:<29} {1}'.format('Title Comparison Test', testTitle))
 
     if testTitle == 'Failed':
-        raise Exception('< Title Match Failure! >')
+        return False
 
     return True
 

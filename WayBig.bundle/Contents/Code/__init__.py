@@ -254,10 +254,7 @@ class WayBig(Agent.Movies):
 
                 # Site Title
                 utils.log(LOG_BIGLINE)
-                try:
-                    utils.matchTitle(filmTitle, FILMDICT)
-                except Exception as e:
-                    utils.log('SEARCH:: Error getting Site Title: {0}'.format(e))
+                if not utils.matchTitle(filmTitle, FILMDICT):
                     utils.log(LOG_SUBLINE)
                     continue
 

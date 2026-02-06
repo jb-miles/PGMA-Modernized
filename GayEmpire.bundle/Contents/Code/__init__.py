@@ -189,10 +189,12 @@ class GayEmpire(Agent.Movies):
                             if matched.group(1) in FILMDICT['Studio'] or FILMDICT['Studio'] in matched.group(1):
                                 utils.log('SEARCH:: {0:<29} {1}'.format('Studio in Title', matched.group(1)))
                                 filmTitle = re.sub(pattern, '', filmTitle)
-
-                        utils.matchTitle(filmTitle, FILMDICT)
                     except Exception as e:
                         utils.log('SEARCH:: Error getting Site Title: {0}'.format(e))
+                        utils.log(LOG_SUBLINE)
+                        continue
+
+                    if not utils.matchTitle(filmTitle, FILMDICT):
                         utils.log(LOG_SUBLINE)
                         continue
 
