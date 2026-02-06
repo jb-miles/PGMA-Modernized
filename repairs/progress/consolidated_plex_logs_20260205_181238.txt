@@ -1,0 +1,1715 @@
+PLEX LOG ANALYSIS REPORT v2
+Generated: 2026-02-05 18:12:38.767284
+================================================================================
+
+AGENT SUMMARY (Unique Error Types by Agent):
+--------------------------------------------------------------------------------
+  GEVI: 28 error type(s)
+  AEBN: 16 error type(s)
+  GayHotMovies: 11 error type(s)
+  GayEmpire: 10 error type(s)
+  BestExclusivePorn: 9 error type(s)
+  CDUniverse: 4 error type(s)
+  GayFetishandBDSM: 4 error type(s)
+  GayMovie: 4 error type(s)
+  GayRado: 4 error type(s)
+  GayAdultFilms: 2 error type(s)
+  GayWorld: 2 error type(s)
+  imdb: 2 error type(s)
+================================================================================
+
+AGENT: AEBN
+COUNT: 221
+TEMPLATE: (utils:5551) - AEBN - SEARCH:: ❌ File: __init__.py, Line: 293, Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:24,612 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS ::         IAFD Studio
+   2026-02-05 18:08:24,612 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS ::         File Studio           cobravideo
+>> 2026-02-05 18:08:24,620 (17218f000) :  ERROR (utils:5551) - AEBN - SEARCH:: ❌ File: __init__.py, Line: 293, Function: _process_function_call -> _search -> search
+   2026-02-05 18:08:24,620 (17218f000) :  ERROR (utils:5552) - AEBN - SEARCH::    Error Matching Sebastian's Studios,: < Studio Match Failure! >
+================================================================================
+
+AGENT: AEBN
+COUNT: 187
+TEMPLATE: (utils:5552) - AEBN - SEARCH::    Error Matching Sebastian's Studios,: < Studio Match Failure! >
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error <*> <*> <*> < <*> Match Failure! >
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:24,612 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS ::         File Studio           cobravideo
+   2026-02-05 18:08:24,620 (17218f000) :  ERROR (utils:5551) - AEBN - SEARCH:: ❌ File: __init__.py, Line: 293, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:08:24,620 (17218f000) :  ERROR (utils:5552) - AEBN - SEARCH::    Error Matching Sebastian's Studios,: < Studio Match Failure! >
+   2026-02-05 18:08:24,620 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: AEBN Studio                   Bareback Media
+================================================================================
+
+AGENT: AEBN
+COUNT: 48
+TEMPLATE: (utils:5551) - AEBN - UTILS :: ❌ File: utils.py, Line: 1377, Function: getSiteInfo -> _apply -> getSiteInfoAEBN
+DRAIN PATTERN: (utils:5551) - <*> - UTILS :: <*> File: <*> Line: <*> Function: <*> -> <*> -> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:03,937 (17218f000) :  INFO (sandbox:19) - AEBN  -       ----------------------------------------------------------------------------------------------------
+   2026-02-05 18:08:03,937 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: *********************************** << https://gay.aebn.com/gay/movies/191845/cheap-thrills-7 >> **********************************
+>> 2026-02-05 18:08:03,942 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ❌ File: utils.py, Line: 1377, Function: getSiteInfo -> _apply -> getSiteInfoAEBN
+   2026-02-05 18:08:03,943 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    Error: Getting Synopsis: list index out of range
+================================================================================
+
+AGENT: AEBN
+COUNT: 14
+TEMPLATE: (utils:5552) - AEBN - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: IAFD Lookup Disabled to prevent 403 Errors.
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:03,954 (17218f000) :  INFO (sandbox:19) - AEBN  - --------------------------------------------------------------------------------------------------------------------------------------------
+   2026-02-05 18:08:03,954 (17218f000) :  INFO (sandbox:19) - AEBN  - --------------------------------------------------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:08:03,954 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+   2026-02-05 18:08:03,954 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ❌ File: , Line: , Function: update -> updateMetadata -> getFilmOnIAFD
+================================================================================
+
+AGENT: AEBN
+COUNT: 14
+TEMPLATE: (utils:5552) - AEBN - UTILS ::    Warning: No Scenes / Reviews Found!
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: No Scenes / Reviews Found!
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:04,767 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: Scenes                        AEBN: 0 - {}
+   2026-02-05 18:08:04,785 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ⚠ File: , Line: , Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:08:04,785 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    Warning: No Scenes / Reviews Found!
+   2026-02-05 18:08:04,785 (17218f000) :  INFO (sandbox:19) - AEBN  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: AEBN
+COUNT: 13
+TEMPLATE: (utils:5552) - AEBN - UTILS ::    Warning: No Chapters Found!
+DRAIN PATTERN: (utils:5552) - AEBN - <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:04,789 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: 2l. Summary
+   2026-02-05 18:08:04,789 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: Collection                     1 - |4| Treasure Island Media
+>> 2026-02-05 18:08:04,789 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    Warning: No Chapters Found!
+   2026-02-05 18:08:04,789 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ⚠ File: , Line: , Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: AEBN
+COUNT: 12
+TEMPLATE: (utils:5552) - AEBN - UTILS ::    Warning: No Chapters Found!
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: No Chapters Found!
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:07:12,810 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: 2k. Chapters                  0 - {}
+   2026-02-05 18:07:12,819 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ⚠ File: , Line: , Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:07:12,821 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    Warning: No Chapters Found!
+   2026-02-05 18:07:12,821 (17218f000) :  INFO (sandbox:19) - AEBN  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: AEBN
+COUNT: 11
+TEMPLATE: (utils:5552) - AEBN - SEARCH::    Error No Matching Site Studio
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:04:03,631 (17218f000) :  INFO (sandbox:19) - AEBN  - SEARCH:: Processing                    Page 1: 2 of 12 for Blue Pictures - Bare My Back (2004)
+   2026-02-05 18:04:03,631 (17218f000) :  INFO (sandbox:19) - AEBN  -       ----------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:04:03,631 (17218f000) :  ERROR (utils:5552) - AEBN - SEARCH::    Error No Matching Site Studio
+   2026-02-05 18:04:03,631 (17218f000) :  ERROR (utils:5551) - AEBN - SEARCH:: ❌ File: __init__.py, Line: 293, Function: _process_function_call -> _search -> search
+================================================================================
+
+AGENT: AEBN
+COUNT: 6
+TEMPLATE: (utils:5552) - AEBN - SEARCH::    Error Matching HungPapi: < Studio Match Failure! >
+DRAIN PATTERN: (utils:5552) - AEBN - SEARCH:: Error Matching <*> < Studio Match Failure! >
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:29,880 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS ::         File Studio           cobravideo
+   2026-02-05 18:08:29,880 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS ::         IAFD Studio
+>> 2026-02-05 18:08:29,884 (17218f000) :  ERROR (utils:5552) - AEBN - SEARCH::    Error Matching HungPapi: < Studio Match Failure! >
+   2026-02-05 18:08:29,884 (17218f000) :  ERROR (utils:5551) - AEBN - SEARCH:: ❌ File: __init__.py, Line: 293, Function: _process_function_call -> _search -> search
+================================================================================
+
+AGENT: AEBN
+COUNT: 6
+TEMPLATE: (utils:5552) - AEBN - SEARCH::    Error Matching On The Hunt: < Studio Match Failure! >
+DRAIN PATTERN: (utils:5552) - AEBN - SEARCH:: Error <*> <*> <*> <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:39,851 (17259b000) :  INFO (sandbox:19) - AEBN  - UTILS :: Studio Comparison Test        Failed Match
+   2026-02-05 18:08:39,859 (17259b000) :  ERROR (utils:5551) - AEBN - SEARCH:: ❌ File: __init__.py, Line: 293, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:08:39,859 (17259b000) :  ERROR (utils:5552) - AEBN - SEARCH::    Error Matching On The Hunt: < Studio Match Failure! >
+   2026-02-05 18:08:39,862 (17259b000) :  ERROR (utils:5551) - AEBN - SEARCH:: ❌ File: __init__.py, Line: 293, Function: _process_function_call -> _search -> search
+================================================================================
+
+AGENT: AEBN
+COUNT: 2
+TEMPLATE: (utils:5552) - AEBN - UTILS ::    Error: Getting Release Date: list index out of range
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: <*> <*> <*> <*> list index out of range
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:06:01,309 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: Compilation?                  No
+   2026-02-05 18:06:01,314 (17218f000) :  INFO (sandbox:19) - AEBN  -       ----------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:06:01,314 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    Error: Getting Release Date: list index out of range
+   2026-02-05 18:06:01,314 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ❌ File: utils.py, Line: 1491, Function: getSiteInfo -> _apply -> getSiteInfoAEBN
+================================================================================
+
+AGENT: AEBN
+COUNT: 2
+TEMPLATE: (utils:5552) - AEBN - UTILS ::    Error: Setting Originally Available Date: 'NoneType' object has no attribute 'date'
+DRAIN PATTERN: (utils:5552) - AEBN - UTILS :: Error: Setting Originally Available Date: 'NoneType' object has no attribute 'date'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:06:02,184 (17218f000) :  INFO (sandbox:19) - AEBN  - --------------------------------------------------------------------------------------------------------------------------------------------
+   2026-02-05 18:06:02,186 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: 2o. Originally Available Date
+>> 2026-02-05 18:06:02,191 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    Error: Setting Originally Available Date: 'NoneType' object has no attribute 'date'
+   2026-02-05 18:06:02,191 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ❌ File: utils.py, Line: 7462, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: AEBN
+COUNT: 1
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:03:03,904 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.AEBN in namespace 'metadata'
+   2026-02-05 18:03:03,906 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:03:03,910 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:03:03,911 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+================================================================================
+
+AGENT: AEBN
+COUNT: 1
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:03:03,906 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:03:03,910 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:03:03,911 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:03:03,914 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: AEBN
+COUNT: 1
+TEMPLATE: (utils:5552) - AEBN - UTILS ::    Error: Getting Synopsis: list index out of range
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Error: Getting <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:03,937 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: *********************************** << https://gay.aebn.com/gay/movies/191845/cheap-thrills-7 >> **********************************
+   2026-02-05 18:08:03,942 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ❌ File: utils.py, Line: 1377, Function: getSiteInfo -> _apply -> getSiteInfoAEBN
+>> 2026-02-05 18:08:03,943 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    Error: Getting Synopsis: list index out of range
+   2026-02-05 18:08:03,943 (17218f000) :  INFO (sandbox:19) - AEBN  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: AEBN
+COUNT: 1
+TEMPLATE: (utils:5552) - AEBN - UTILS ::    Error: Getting Synopsis: list index out of range
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: <*> <*> <*> list index out of range
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:07:23,725 (17218f000) :  INFO (sandbox:19) - AEBN  - UTILS :: Director(s)                    0 - []
+   2026-02-05 18:07:23,725 (17218f000) :  ERROR (utils:5551) - AEBN - UTILS :: ❌ File: utils.py, Line: 1377, Function: getSiteInfo -> _apply -> getSiteInfoAEBN
+>> 2026-02-05 18:07:23,725 (17218f000) :  ERROR (utils:5552) - AEBN - UTILS ::    Error: Getting Synopsis: list index out of range
+   2026-02-05 18:07:23,726 (17218f000) :  INFO (sandbox:19) - AEBN  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 3
+TEMPLATE: (utils:5551) - BestExclusivePorn - UTILS :: ❌ File: , Line: , Function: update -> updateMetadata -> getFilmOnIAFD
+DRAIN PATTERN: (utils:5551) - <*> - UTILS :: <*> File: <*> Line: <*> Function: <*> -> <*> -> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:58,106 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  - --------------------------------------------------------------------------------------------------------------------------------------------
+   2026-02-05 18:10:58,106 (16e8a7000) :  ERROR (utils:5552) - BestExclusivePorn - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+>> 2026-02-05 18:10:58,106 (16e8a7000) :  ERROR (utils:5551) - BestExclusivePorn - UTILS :: ❌ File: , Line: , Function: update -> updateMetadata -> getFilmOnIAFD
+   2026-02-05 18:10:58,106 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  - --------------------------------------------------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 2
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:06,183 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:09:06,186 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+>> 2026-02-05 18:09:06,186 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:09:06,189 (207042080) :  DEBUG (core:560) - Loading plug-in code
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 2
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:06,181 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.BestExclusivePorn in namespace 'metadata'
+   2026-02-05 18:09:06,183 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:09:06,186 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:09:06,186 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 1
+TEMPLATE: (utils:5551) - BestExclusivePorn - SEARCH:: ⚠ File: , Line: , Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:38,046 (16ecb3000) :  INFO (sandbox:19) - BestExclusivePorn  -       ----------------------------------------------------------------------------------------------------
+   2026-02-05 18:11:38,046 (16ecb3000) :  INFO (sandbox:19) - BestExclusivePorn  - SEARCH:: Search Query                  https://bestexclusiveporn.com/page/11?s=bareback+bang
+>> 2026-02-05 18:11:38,055 (16ecb3000) :  ERROR (utils:5551) - BestExclusivePorn - SEARCH:: ⚠ File: , Line: , Function: _process_function_call -> _search -> search
+   2026-02-05 18:11:38,055 (16ecb3000) :  ERROR (utils:5552) - BestExclusivePorn - SEARCH::    Warning: Page Search Limit Reached [10]
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 1
+TEMPLATE: (utils:5552) - BestExclusivePorn - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: IAFD Lookup Disabled to prevent 403 Errors.
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:58,106 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  - UTILS :: Get Agent Metadata Fields
+   2026-02-05 18:10:58,106 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  - --------------------------------------------------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:10:58,106 (16e8a7000) :  ERROR (utils:5552) - BestExclusivePorn - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+   2026-02-05 18:10:58,106 (16e8a7000) :  ERROR (utils:5551) - BestExclusivePorn - UTILS :: ❌ File: , Line: , Function: update -> updateMetadata -> getFilmOnIAFD
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 1
+TEMPLATE: (utils:5552) - BestExclusivePorn - UTILS ::    Warning: No Chapters Found!
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: No Chapters Found!
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:01,711 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  - UTILS :: 2l. Summary
+   2026-02-05 18:11:01,711 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  -       ----------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:11:01,711 (16e8a7000) :  ERROR (utils:5552) - BestExclusivePorn - UTILS ::    Warning: No Chapters Found!
+   2026-02-05 18:11:01,740 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  - UTILS :: Run Translation               [No] - Site Language: [english] to Library Language: [english]
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 1
+TEMPLATE: (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media Server/Metadata/Movies/c/736943a206e46107289811385652bedf8a5df39.bundle/Contents/com.plexapp.agents.BestExclusivePorn
+DRAIN PATTERN: (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:43,407 (16e8a7000) :  DEBUG (runtime:924) - Response: [200] str, 2080 bytes
+   2026-02-05 18:10:43,411 (16e8a7000) :  DEBUG (runtime:717) - Handling request GET /:/plugins/com.plexapp.agents.BestExclusivePorn/messaging/function/X0FnZW50S2l0OlVwZGF0ZU1ldGFkYXRh/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMTAKczIKZW5zNApsYW5nYjFzNQpmb3JjZWIwczgKcGVyaW9kaWNzMgo4MXM0CmRiaWRpMApzNwp2ZXJzaW9ubnMxMApwYXJlbnRHVUlEbnM4CnBhcmVudElEczUKTW92aWVzMTAKbWVkaWFfdHlwZXM0NQpjb20ucGxleGFwcC5hZ2VudHMuR2F5QWR1bHRGaWxtczovLzgxP2xhbmc9ZW5zNApndWlkczEwODkKeyJOb3JtYWxpc2VTaG9ydFRpdGxlIjogImFub255bW91c3NleCIsICJTaG9ydFRpdGxlIjogIkFub255bW91cyBTZXgiLCAiVGl0bGUiOiAiQW5vbnltb3VzIFNleCIsICJ2UmVsZWFzZURhdGUiOiAiMjAyNC0wMS0xNiAwMDowMDowMCIsICJ2RHVyYXRpb24iOiAiIiwgIklBRkRTdHVkaW8iOiAiIiwgIklBRkRGaWxtVVJMIjogIiIsICJ2Q29tcGlsYXRpb24iOiAiIiwgIkFsbEdpcmwiOiAiIiwgImlkIjogIjgxIiwgIkNvbXBhcmVTaXRlU3R1ZGlvIjogIiIsICJTdGF0dXMiOiBmYWxzZSwgIkNvbXBhcmVJQUZEU3R1ZGlvIjogIiIsICJJQUZEVGl0bGUiOiAiQW5vbnltb3VzIFNleCIsICJTdHVkaW8iOiAiVHJlYXN1cmUgSXNsYW5kIE1lZGlhIiwgIklBRkRTZWFyY2hUaXRsZSI6ICJBbm9ueW1vdXMrU2V4IiwgIkNvbXBhcmVTdHVkaW8iOiAidHJlYXN1cmVpc2xhbmRtZWRpYSIsICJTY2VuZUFnZW50IjogZmFsc2UsICJSb3RhdGlvbiI6IDAsICJGb3VuZE9uSUFGRCI6ICJObyIsICJTdGFja2VkIjogIk5vIiwgIklBRkREdXJhdGlvbiI6ICIxOTY5LTEyLTMxIDE2OjAwOjAwIiwgIlJlY29yZGVkU3R1ZGlvcyI6IFsiKlNFVCoiXSwgIkNhc3QiOiB7fSwgIkNvbXBhcmVEYXRlIjogbnVsbCwgIkZpbG1BS0EiOiAiIiwgIlNlYXJjaFRpdGxlIjogIkFub255bW91cyBTZXgiLCAiR0VWSVNjZW5lIjogIiIsICJTZWFyY2hUaXRsZXMiOiBbIkFub255bW91cyBTZXgiXSwgImxhbmciOiAiZW4iLCAiQ29tcGFyZVRpdGxlIjogWyJhZW1ubm9vc3N1eHkiXSwgIkZpbG1VUkwiOiAiaHR0cHM6Ly9iZXN0ZXhjbHVzaXZlcG9ybi5jb20vYW5vbnltb3VzLXNleC5odG1sIiwgIkFsbE1hbGUiOiAiIiwgIlNlcmllcyI6IFtdLCAiRGlyZWN0b3JzIjoge30sICJBZ2VudCI6ICJCZXN0RXhjbHVzaXZlUG9ybiIsICJGaWxlTmFtZSI6ICIoVHJlYXN1cmUgSXNsYW5kIE1lZGlhKSAtIEFub255bW91cyBTZXgiLCAiRXBpc29kZXMiOiBbXSwgIkZpbGVuYW1lQ2FzdCI6IFtdLCAiWWVhciI6IDAsICJEdXJhdGlvbiI6ICIxOTY5LTEyLTMxIDE2OjAwOjAwIiwgIklBRkQ0MDNFcnIiOiBbIipTRVQqIl0sICJDb21waWxhdGlvbiI6ICJObyJ9czIKaWRyMAo_
+>> 2026-02-05 18:10:43,412 (16e8a7000) :  ERROR (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media Server/Metadata/Movies/c/736943a206e46107289811385652bedf8a5df39.bundle/Contents/com.plexapp.agents.BestExclusivePorn
+   2026-02-05 18:10:43,412 (16e8a7000) :  DEBUG (model:32) - Loading model with GUID com.plexapp.agents.GayAdultFilms://81?lang=en
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 1
+TEMPLATE: (utils:5552) - BestExclusivePorn - UTILS ::    Warning: Agent Has No Scenes / Reviews Set!
+DRAIN PATTERN: (utils:5552) - BestExclusivePorn - UTILS :: Warning: Agent Has No Scenes / Reviews Set!
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:01,687 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  -       ----------------------------------------------------------------------------------------------------
+   2026-02-05 18:11:01,702 (16e8a7000) :  ERROR (utils:5551) - BestExclusivePorn - UTILS :: ⚠ File: , Line: , Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:11:01,703 (16e8a7000) :  ERROR (utils:5552) - BestExclusivePorn - UTILS ::    Warning: Agent Has No Scenes / Reviews Set!
+   2026-02-05 18:11:01,703 (16e8a7000) :  INFO (sandbox:19) - BestExclusivePorn  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: BestExclusivePorn
+COUNT: 1
+TEMPLATE: (utils:5552) - BestExclusivePorn - SEARCH::    Warning: Page Search Limit Reached [10]
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Warning: <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:38,046 (16ecb3000) :  INFO (sandbox:19) - BestExclusivePorn  - SEARCH:: Search Query                  https://bestexclusiveporn.com/page/11?s=bareback+bang
+   2026-02-05 18:11:38,055 (16ecb3000) :  ERROR (utils:5551) - BestExclusivePorn - SEARCH:: ⚠ File: , Line: , Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:11:38,055 (16ecb3000) :  ERROR (utils:5552) - BestExclusivePorn - SEARCH::    Warning: Page Search Limit Reached [10]
+   2026-02-05 18:11:38,056 (16ecb3000) :  INFO (sandbox:19) - BestExclusivePorn  - SEARCH:: ************************************************************** >>  << *************************************************************
+================================================================================
+
+AGENT: CDUniverse
+COUNT: 4
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:46,556 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.CDUniverse in namespace 'metadata'
+   2026-02-05 18:10:46,558 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:10:46,561 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:10:46,562 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+================================================================================
+
+AGENT: CDUniverse
+COUNT: 3
+TEMPLATE: (utils:5551) - CDUniverse - SEARCH:: ❌ File: __init__.py, Line: 126, Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:50,858 (171cff000) :  ERROR (utils:5552) - CDUniverse - SEARCH::    Error: Search Query did not pull any results: HTTP Error 404: Not Found
+   2026-02-05 18:10:50,858 (171cff000) :  INFO (sandbox:19) - CDUniverse  - ********************************************************************************************************************************************
+>> 2026-02-05 18:10:50,858 (171cff000) :  ERROR (utils:5551) - CDUniverse - SEARCH:: ❌ File: __init__.py, Line: 126, Function: _process_function_call -> _search -> search
+   2026-02-05 18:10:50,858 (171cff000) :  INFO (sandbox:19) - CDUniverse  - SEARCH:: ******************************************** >> CDUniverse: Finished Search Routine << ********************************************
+================================================================================
+
+AGENT: CDUniverse
+COUNT: 3
+TEMPLATE: (utils:5552) - CDUniverse - SEARCH::    Error: Search Query did not pull any results: HTTP Error 404: Not Found
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error: Search Query did not pull any results: <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:50,858 (171cff000) :  INFO (sandbox:19) - CDUniverse  - SEARCH:: ************************************************************** >>  << *************************************************************
+   2026-02-05 18:10:50,858 (171cff000) :  INFO (sandbox:19) - CDUniverse  - SEARCH:: ************************************** >> (Hot Desert Knights) - Absolutely Fucked (2009) << **************************************
+>> 2026-02-05 18:10:50,858 (171cff000) :  ERROR (utils:5552) - CDUniverse - SEARCH::    Error: Search Query did not pull any results: HTTP Error 404: Not Found
+   2026-02-05 18:10:50,858 (171cff000) :  INFO (sandbox:19) - CDUniverse  - ********************************************************************************************************************************************
+================================================================================
+
+AGENT: CDUniverse
+COUNT: 1
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:46,558 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:10:46,561 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:10:46,562 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:10:46,565 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: GEVI
+COUNT: 172
+TEMPLATE: (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 3809, Function: getSiteInfo -> _apply -> getSiteInfoGEVI
+DRAIN PATTERN: (utils:5551) - <*> - UTILS :: <*> File: <*> Line: <*> Function: <*> -> <*> -> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:11,991 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Categories                     1 - ['General Hardcore']
+   2026-02-05 18:08:11,991 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: GEVI Genres                    2 - ['General Hardcore', 'Compilation']
+>> 2026-02-05 18:08:11,991 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 3809, Function: getSiteInfo -> _apply -> getSiteInfoGEVI
+   2026-02-05 18:08:11,991 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: External Genres                5 - ['Anal Sex', 'Bareback', 'Blue Collar', 'Compilations', 'Cum']
+================================================================================
+
+AGENT: GEVI
+COUNT: 38
+TEMPLATE: (utils:5551) - GEVI - SEARCH:: ❌ File: __init__.py, Line: 475, Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:18,771 (172da7000) :  INFO (sandbox:19) - GEVI  - SEARCH:: JSON: {'recordsTotal': 72249, 'recordsFiltered': 0, 'draw': 4, 'data': []}
+   2026-02-05 18:08:18,772 (172da7000) :  INFO (sandbox:19) - GEVI  - SEARCH:: Film List: []
+>> 2026-02-05 18:08:18,784 (172da7000) :  ERROR (utils:5551) - GEVI - SEARCH:: ❌ File: __init__.py, Line: 475, Function: _process_function_call -> _search -> search
+   2026-02-05 18:08:18,784 (172da7000) :  ERROR (utils:5552) - GEVI - SEARCH::    Error: Search Query did not pull any results: < No Film Titles! >
+================================================================================
+
+AGENT: GEVI
+COUNT: 38
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: No Types: list index out of range
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: <*> <*> <*> list index out of range
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:47,390 (17299b000) :  INFO (sandbox:19) - GEVI  - UTILS :: Categories                     1 - ['General Hardcore']
+   2026-02-05 18:08:47,408 (17299b000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 3809, Function: getSiteInfo -> _apply -> getSiteInfoGEVI
+>> 2026-02-05 18:08:47,408 (17299b000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: No Types: list index out of range
+   2026-02-05 18:08:47,408 (17299b000) :  INFO (sandbox:19) - GEVI  - UTILS :: External Genres                8 - ['Anal Sex', 'BDSM', 'Bareback', 'Big Cocks', 'College/Frat/Studs', 'Fetish', 'Fisting', 'Role Play']
+================================================================================
+
+AGENT: GEVI
+COUNT: 31
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: No Body Types: list index out of range
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: <*> <*> <*> <*> list index out of range
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:11,991 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 3809, Function: getSiteInfo -> _apply -> getSiteInfoGEVI
+   2026-02-05 18:08:11,991 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: External Genres                5 - ['Anal Sex', 'Bareback', 'Blue Collar', 'Compilations', 'Cum']
+>> 2026-02-05 18:08:11,991 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: No Body Types: list index out of range
+   2026-02-05 18:08:11,992 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Item: Old :: New               1 - U.S.                      :: United States
+================================================================================
+
+AGENT: GEVI
+COUNT: 28
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: No Review Source (Used Film Title)
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: No Review Source (Used Film Title)
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:07:46,981 (17299b000) :  INFO (sandbox:19) - GEVI  - UTILS :: Review Source                 N/A - 1. Breeding Season 2...
+   2026-02-05 18:07:46,981 (17299b000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 3809, Function: getSiteInfo -> _apply -> getSiteInfoGEVI
+>> 2026-02-05 18:07:46,981 (17299b000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: No Review Source (Used Film Title)
+   2026-02-05 18:07:46,982 (17299b000) :  INFO (sandbox:19) - GEVI  - UTILS :: Scene                         2
+================================================================================
+
+AGENT: GEVI
+COUNT: 15
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: IAFD Lookup Disabled to prevent 403 Errors.
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:12,001 (17258f000) :  INFO (sandbox:19) - GEVI  - --------------------------------------------------------------------------------------------------------------------------------------------
+   2026-02-05 18:08:12,001 (17258f000) :  INFO (sandbox:19) - GEVI  - --------------------------------------------------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:08:12,001 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+   2026-02-05 18:08:12,001 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ❌ File: , Line: , Function: update -> updateMetadata -> getFilmOnIAFD
+================================================================================
+
+AGENT: GEVI
+COUNT: 15
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: No Chapters Found!
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: No Chapters Found!
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:13,897 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: 2k. Chapters                  0 - {}
+   2026-02-05 18:08:13,902 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:08:13,902 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: No Chapters Found!
+   2026-02-05 18:08:13,902 (17258f000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GEVI
+COUNT: 15
+TEMPLATE: (utils:5552) - GEVI - SEARCH::    Warning: Getting Site URL Release Date: Default to Filename Date: 2011-12-31 00:00:00
+DRAIN PATTERN: (utils:5552) - GEVI - SEARCH:: Warning: Getting Site URL Release Date: Default to Filename Date: <*> 00:00:00
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:47,178 (17299b000) :  INFO (sandbox:19) - GEVI  - --------------------------------------------------------------------------------------------------------------------------------------------
+   2026-02-05 18:08:47,178 (17299b000) :  INFO (sandbox:19) - GEVI  - SEARCH:: Site URL Duration(s)           1 - ['130']
+>> 2026-02-05 18:08:47,178 (17299b000) :  ERROR (utils:5552) - GEVI - SEARCH::    Warning: Getting Site URL Release Date: Default to Filename Date: 2011-12-31 00:00:00
+   2026-02-05 18:08:47,178 (17299b000) :  ERROR (utils:5551) - GEVI - SEARCH:: ⚠ File: , Line: , Function: _process_function_call -> _search -> search
+================================================================================
+
+AGENT: GEVI
+COUNT: 13
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Error: Getting Scenes: < No Scenes Found! >
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Error: Getting <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:47,200 (17299b000) :  ERROR (utils:5551) - GEVI - UTILS :: ❌ File: utils.py, Line: 2624, Function: getSiteInfo -> _apply -> getSiteInfoGayEmpire
+   2026-02-05 18:08:47,204 (17299b000) :  ERROR (utils:5551) - GEVI - UTILS :: ❌ File: utils.py, Line: 2674, Function: getSiteInfo -> _apply -> getSiteInfoGayEmpire
+>> 2026-02-05 18:08:47,204 (17299b000) :  ERROR (utils:5552) - GEVI - UTILS ::    Error: Getting Scenes: < No Scenes Found! >
+   2026-02-05 18:08:47,204 (17299b000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GEVI
+COUNT: 13
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Error: Getting Site Film Duration: list index out of range
+DRAIN PATTERN: (utils:5552) - GEVI - UTILS :: Error: Getting Site Film Duration: list index out of range
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:47,200 (17299b000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+   2026-02-05 18:08:47,200 (17299b000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:08:47,200 (17299b000) :  ERROR (utils:5552) - GEVI - UTILS ::    Error: Getting Site Film Duration: list index out of range
+   2026-02-05 18:08:47,200 (17299b000) :  INFO (sandbox:19) - GEVI  - UTILS :: Poster                        []
+================================================================================
+
+AGENT: GEVI
+COUNT: 13
+TEMPLATE: (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media Server/Metadata/Movies/f/7fd6bce597d2436476fc7a87609b9497b471615.bundle/Contents/com.plexapp.agents.GEVI
+DRAIN PATTERN: (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:03,767 (17258f000) :  DEBUG (runtime:814) - Found route matching /:/plugins/com.plexapp.agents.GEVI/messaging/function/X0FnZW50S2l0OlVwZGF0ZU1ldGFkYXRh/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMTAKczIKZW5zNApsYW5nYjFzNQpmb3JjZWIwczgKcGVyaW9kaWNzMgoxOHM0CmRiaWRpMApzNwp2ZXJzaW9ubnMxMApwYXJlbnRHVUlEbnM4CnBhcmVudElEczUKTW92aWVzMTAKbWVkaWFfdHlwZXM0NQpjb20ucGxleGFwcC5hZ2VudHMuR2F5QWR1bHRGaWxtczovLzE4P2xhbmc9ZW5zNApndWlkczE3NTQKeyJHYXlFbXBpcmUiOiB7IlJhdGluZyI6IDAuMCwgIkdlbnJlcyI6IFsiKlNFVCoiXSwgIkFydCI6IFtdLCAiQ291bnRyaWVzIjogWyIqU0VUKiJdLCAiUG9zdGVyIjogW10sICJDb21waWxhdGlvbiI6ICJObyIsICJEaXJlY3RvcnMiOiBbXSwgIkNoYXB0ZXJzIjoge30sICJTY2VuZXMiOiB7IkxpbmsiOiAiaHR0cDovL3d3dy5nYXlkdmRlbXBpcmUuY29tLzI3NDcyNDY@cGFydG5lcl9pZD01NjgwMDk1MCJ9LCAiUmVsZWFzZURhdGUiOiBudWxsLCAiQ2FzdCI6IFsiQXZlcnkgSm9uZXMiLCAiR2FicmllbCBDbGFyayIsICJBdXN0aW4gV29sZiIsICJCcm9jayBCYW5rcyIsICJLdXBlciIsICJXZXNzIFJ1c3NlbCIsICJHcmVnIE1ja2VvbiIsICJMZXZpIEthcnRlciJdLCAiU3lub3BzaXMiOiAiIiwgIkNvbGxlY3Rpb25zIjogW10sICJEdXJhdGlvbiI6ICIxOTY5LTEyLTMxIDE2OjAwOjAwIn0sICJOb3JtYWxpc2VTaG9ydFRpdGxlIjogImJveWJhbmdlcnMiLCAiU2hvcnRUaXRsZSI6ICJCb3kgQmFuZ2VycyIsICJUaXRsZSI6ICJCb3kgQmFuZ2VycyIsICJ2UmVsZWFzZURhdGUiOiAiMjAyMC0xMi0zMSAwMDowMDowMCIsICJ2RHVyYXRpb24iOiAiMTk2OS0xMi0zMSAxNzo1MDowMCIsICJJQUZEU3R1ZGlvIjogIiIsICJJQUZERmlsbVVSTCI6ICIiLCAidkNvbXBpbGF0aW9uIjogIk5vIiwgIkFsbEdpcmwiOiAiIiwgImlkIjogIjE4IiwgIkNvbXBhcmVTaXRlU3R1ZGlvIjogImNvY2t5Ym95cyIsICJTdGF0dXMiOiBmYWxzZSwgIkNvbXBhcmVJQUZEU3R1ZGlvIjogIiIsICJJQUZEVGl0bGUiOiAiQm95IEJhbmdlcnMiLCAiU3R1ZGlvIjogIkNvY2t5IEJveXMiLCAiSUFGRFNlYXJjaFRpdGxlIjogIkJveStCYW5nZXJzIiwgIkNvbXBhcmVTdHVkaW8iOiAiY29ja3lib3lzIiwgIlNjZW5lQWdlbnQiOiBmYWxzZSwgIlJvdGF0aW9uIjogMCwgIkZvdW5kT25JQUZEIjogIk5vIiwgIlN0YWNrZWQiOiAiTm8iLCAiSUFGRER1cmF0aW9uIjogIjE5NjktMTItMzEgMTY6MDA6MDAiLCAiUmVjb3JkZWRTdHVkaW9zIjogWyJDb2NreSBCb3lzIl0sICJDYXN0Ijoge30sICJDb21wYXJlRGF0ZSI6ICIyMDIwLTEyLTMxIDAwOjAwOjAwIiwgIkZpbG1BS0EiOiAiIiwgIlNlYXJjaFRpdGxlIjogIkJveSBCYW5nZXJzIiwgIkdFVklTY2VuZSI6ICIiLCAiU2VhcmNoVGl0bGVzIjogWyJCb3kgQmFuZ2VycyJdLCAibGFuZyI6ICJlbiIsICJDb21wYXJlVGl0bGUiOiBbImFiYmVnbm9yc3kiXSwgIkZpbG1VUkwiOiAiaHR0cHM6Ly93d3cuZ2F5ZXJvdGljdmlkZW9pbmRleC5jb20vdmlkZW8vNjUxOTIiLCAiQWxsTWFsZSI6ICIiLCAiU2VyaWVzIjogW10sICJEaXJlY3RvcnMiOiB7fSwgIkFnZW50IjogIkdFVkkiLCAiRmlsZU5hbWUiOiAiKENvY2t5IEJveXMpIC0gQm95IEJhbmdlcnMgKDIwMjApIC0gW0F2ZXJ5IEpvbmVzLCBHYWJyaWVsIENsYXJrLCBBdXN0aW4gV29sZiwgQnJvY2sgQmFua3MsIEt1cGVyLCBXZXNzIFJ1c3NlbCwgR3JlZyBNY2tlb24sIExldmkgS2FydGVyXSIsICJFcGlzb2RlcyI6IFtdLCAiRmlsZW5hbWVDYXN0IjogWyJBdmVyeSBKb25lcyIsICJHYWJyaWVsIENsYXJrIiwgIkF1c3RpbiBXb2xmIiwgIkJyb2NrIEJhbmtzIiwgIkt1cGVyIiwgIldlc3MgUnVzc2VsIiwgIkdyZWcgTWNrZW9uIiwgIkxldmkgS2FydGVyIl0sICJZZWFyIjogMjAyMCwgIkR1cmF0aW9uIjogIjE5NjktMTItMzEgMTY6MDA6MDAiLCAiSUFGRDQwM0VyciI6IFsiKlNFVCoiXSwgIkNvbXBpbGF0aW9uIjogIk5vIn1zMgppZHIwCg__
+   2026-02-05 18:09:03,768 (17258f000) :  DEBUG (model:32) - Loading model with GUID com.plexapp.agents.GayAdultFilms://18?lang=en
+>> 2026-02-05 18:09:03,768 (17258f000) :  ERROR (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media Server/Metadata/Movies/f/7fd6bce597d2436476fc7a87609b9497b471615.bundle/Contents/com.plexapp.agents.GEVI
+   2026-02-05 18:09:03,768 (17258f000) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/library/metadata/18/tree'
+================================================================================
+
+AGENT: GEVI
+COUNT: 8
+TEMPLATE: (utils:5552) - GEVI - SEARCH::    Error getting Site Title: < Title Match Failure! >
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error <*> <*> <*> < <*> Match Failure! >
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:52,988 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Title Comparison Test         Failed
+   2026-02-05 18:08:52,999 (17258f000) :  ERROR (utils:5551) - GEVI - SEARCH:: ❌ File: __init__.py, Line: 475, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:08:53,000 (17258f000) :  ERROR (utils:5552) - GEVI - SEARCH::    Error getting Site Title: < Title Match Failure! >
+   2026-02-05 18:08:53,003 (17258f000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GEVI
+COUNT: 8
+TEMPLATE: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Butler's Best (2013).jpg (most recent call last):
+DRAIN PATTERN: (storage:89) - Exception writing to <*> <*> <*> <*> <*> <*> <*> (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save shutil.move(tempfile, filename) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move copy2(src, real_dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2 copyfile(src, dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile with open(src, 'rb') as fsrc: IOError: [Errno 2] No such file or directory: <*> <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:12,593 (17258f000) :  DEBUG (networking:176) - Not caching 'https://www.gayeroticvideoindex.com/images/Covers/6/video27076.jpg' (content type 'image/jpeg' not cacheable in Agent plug-ins)
+   2026-02-05 18:08:12,593 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Poster                         1 -
+>> 2026-02-05 18:08:13,127 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Butler's Best (2013).jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: "/Volumes/internal/porn_movies/._(Hot Desert Knights) - Butler's Best (2013).jpg"
+   2026-02-05 18:08:13,158 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: GEVI
+COUNT: 8
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: "/Volumes/internal/porn_movies/._(Hot Desert Knights) - Butler's Best (2013).jpg"
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: Saving Poster to Disk: [Errno 2] No such file or directory: <*> <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:13,127 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Butler's Best (2013).jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: "/Volumes/internal/porn_movies/._(Hot Desert Knights) - Butler's Best (2013).jpg"
+   2026-02-05 18:08:13,158 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:08:13,159 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: "/Volumes/internal/porn_movies/._(Hot Desert Knights) - Butler's Best (2013).jpg"
+   2026-02-05 18:08:13,159 (17258f000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GEVI
+COUNT: 7
+TEMPLATE: (utils:5552) - GEVI - SEARCH::    Warning: < Studio Match Failure! >
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Warning: <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:05:56,615 (172da7000) :  INFO (sandbox:19) - GEVI  - UTILS ::         File Studio           bluepictures
+   2026-02-05 18:05:56,624 (172da7000) :  ERROR (utils:5551) - GEVI - SEARCH:: ⚠ File: __init__.py, Line: 475, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:05:56,625 (172da7000) :  ERROR (utils:5552) - GEVI - SEARCH::    Warning: < Studio Match Failure! >
+   2026-02-05 18:05:56,625 (172da7000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GEVI
+COUNT: 6
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: No Scenes / Reviews Found!
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: No Scenes / Reviews Found!
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:13,883 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Scenes                        GEVI: 0 - {}
+   2026-02-05 18:08:13,897 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:08:13,897 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: No Scenes / Reviews Found!
+   2026-02-05 18:08:13,897 (17258f000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GEVI
+COUNT: 6
+TEMPLATE: (utils:5552) - GEVI - SEARCH::    Error matching Site Studio
+DRAIN PATTERN: (utils:5552) - GEVI - SEARCH:: Error matching Site Studio
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:05:56,631 (172da7000) :  INFO (sandbox:19) - GEVI  - SEARCH:: Processing                    Page 1: 2 of 9 for Blue Pictures - Bareback Fantasies
+   2026-02-05 18:05:56,631 (172da7000) :  ERROR (utils:5551) - GEVI - SEARCH:: ❌ File: __init__.py, Line: 475, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:05:56,631 (172da7000) :  ERROR (utils:5552) - GEVI - SEARCH::    Error matching Site Studio
+   2026-02-05 18:05:56,631 (172da7000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GEVI
+COUNT: 2
+TEMPLATE: (utils:5552) - GEVI - SEARCH::    Error: Search Query did not pull any results: < No Film Titles! >
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error: Search Query did not pull any results: <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:18,772 (172da7000) :  INFO (sandbox:19) - GEVI  - SEARCH:: Film List: []
+   2026-02-05 18:08:18,784 (172da7000) :  ERROR (utils:5551) - GEVI - SEARCH:: ❌ File: __init__.py, Line: 475, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:08:18,784 (172da7000) :  ERROR (utils:5552) - GEVI - SEARCH::    Error: Search Query did not pull any results: < No Film Titles! >
+   2026-02-05 18:08:18,784 (172da7000) :  INFO (sandbox:19) - GEVI  - AGENT :: Original Search Query         Cheap Thrills, Vol.
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Cocky Boys) - Boy Bangers (2020) - [Avery Jones, Gabriel Clark, Austin Wolf, Brock Banks, Kuper, Wess Russel, Greg Mckeon, Levi Karter].jpg (most recent call last):
+DRAIN PATTERN: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Cocky Boys) - Boy Bangers (2020) - [Avery Jones, Gabriel Clark, Austin Wolf, Brock Banks, Kuper, Wess Russel, Greg Mckeon, Levi Karter].jpg (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save shutil.move(tempfile, filename) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move copy2(src, real_dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2 copyfile(src, dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile with open(src, 'rb') as fsrc: IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cocky Boys) - Boy Bangers (2020) - [Avery Jones, Gabriel Clark, Austin Wolf, Brock Banks, Kuper, Wess Russel, Greg Mckeon, Levi Karter].jpg'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:04,592 (17258f000) :  DEBUG (networking:176) - Not caching 'https://www.gayeroticvideoindex.com/images/Covers/2/video65192.jpg' (content type 'image/jpeg' not cacheable in Agent plug-ins)
+   2026-02-05 18:09:04,594 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Poster                         1 -
+>> 2026-02-05 18:09:05,038 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Cocky Boys) - Boy Bangers (2020) - [Avery Jones, Gabriel Clark, Austin Wolf, Brock Banks, Kuper, Wess Russel, Greg Mckeon, Levi Karter].jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cocky Boys) - Boy Bangers (2020) - [Avery Jones, Gabriel Clark, Austin Wolf, Brock Banks, Kuper, Wess Russel, Greg Mckeon, Levi Karter].jpg'
+   2026-02-05 18:09:05,052 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cocky Boys) - Boy Bangers (2020) - [Avery Jones, Gabriel Clark, Austin Wolf, Brock Banks, Kuper, Wess Russel, Greg Mckeon, Levi Karter].jpg'
+DRAIN PATTERN: (utils:5552) - GEVI - UTILS :: Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cocky Boys) - Boy Bangers (2020) - [Avery Jones, Gabriel Clark, Austin Wolf, Brock Banks, Kuper, Wess Russel, Greg Mckeon, Levi Karter].jpg'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:05,052 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+   2026-02-05 18:09:05,053 (17258f000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:09:05,053 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cocky Boys) - Boy Bangers (2020) - [Avery Jones, Gabriel Clark, Austin Wolf, Brock Banks, Kuper, Wess Russel, Greg Mckeon, Levi Karter].jpg'
+   2026-02-05 18:09:05,054 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: 2i. Art Images                ['https://www.gayeroticvideoindex.com/images/Covers/2/video65192b.jpg']
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Cobra Video) - Fuck Me Raw.jpg (most recent call last):
+DRAIN PATTERN: (storage:89) - Exception writing to <*> <*> <*> <*> <*> <*> (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save shutil.move(tempfile, filename) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move copy2(src, real_dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2 copyfile(src, dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile with open(src, 'rb') as fsrc: IOError: [Errno 2] No such file or directory: <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:08,576 (17258f000) :  DEBUG (networking:176) - Not caching 'https://www.gayeroticvideoindex.com/images/Covers/5/video28915.jpg' (content type 'image/jpeg' not cacheable in Agent plug-ins)
+   2026-02-05 18:09:08,577 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Poster                         1 -
+>> 2026-02-05 18:09:09,058 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Cobra Video) - Fuck Me Raw.jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cobra Video) - Fuck Me Raw.jpg'
+   2026-02-05 18:09:09,076 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cobra Video) - Fuck Me Raw.jpg'
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cobra Video) - Fuck Me Raw.jpg'
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: Saving Poster to Disk: [Errno 2] No such file or directory: <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:08,577 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Poster                         1 -
+   2026-02-05 18:09:09,058 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Cobra Video) - Fuck Me Raw.jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cobra Video) - Fuck Me Raw.jpg'
+>> 2026-02-05 18:09:09,076 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Cobra Video) - Fuck Me Raw.jpg'
+   2026-02-05 18:09:09,076 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg (most recent call last):
+DRAIN PATTERN: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save shutil.move(tempfile, filename) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move copy2(src, real_dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2 copyfile(src, dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile with open(src, 'rb') as fsrc: IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:06,128 (17258f000) :  DEBUG (networking:176) - Not caching 'https://www.gayeroticvideoindex.com/images/Covers/3/video73943.jpg' (content type 'image/jpeg' not cacheable in Agent plug-ins)
+   2026-02-05 18:08:06,129 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Poster                         1 -
+>> 2026-02-05 18:08:06,554 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg'
+   2026-02-05 18:08:06,572 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg'
+DRAIN PATTERN: (utils:5552) - GEVI - UTILS :: Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:08:06,554 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg'
+   2026-02-05 18:08:06,572 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:08:06,573 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Club Bang Boys) - Bring Out the Bangboyz (2025).jpg'
+   2026-02-05 18:08:06,573 (17258f000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Blue Pictures) - Bareback Fantasies.jpg (most recent call last):
+DRAIN PATTERN: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Blue Pictures) - Bareback Fantasies.jpg (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save shutil.move(tempfile, filename) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move copy2(src, real_dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2 copyfile(src, dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile with open(src, 'rb') as fsrc: IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Blue Pictures) - Bareback Fantasies.jpg'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:06:20,037 (172da7000) :  INFO (sandbox:19) - GEVI  - UTILS :: Poster                         1 -
+   2026-02-05 18:06:20,037 (172da7000) :  DEBUG (networking:176) - Not caching 'https://www.gayeroticvideoindex.com/images/Covers/9/video33609.jpg' (content type 'image/jpeg' not cacheable in Agent plug-ins)
+>> 2026-02-05 18:06:20,555 (172da7000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Blue Pictures) - Bareback Fantasies.jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Blue Pictures) - Bareback Fantasies.jpg'
+   2026-02-05 18:06:20,572 (172da7000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Blue Pictures) - Bareback Fantasies.jpg'
+DRAIN PATTERN: (utils:5552) - GEVI - UTILS :: Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Blue Pictures) - Bareback Fantasies.jpg'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:06:20,555 (172da7000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Blue Pictures) - Bareback Fantasies.jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Blue Pictures) - Bareback Fantasies.jpg'
+   2026-02-05 18:06:20,572 (172da7000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:06:20,573 (172da7000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Blue Pictures) - Bareback Fantasies.jpg'
+   2026-02-05 18:06:20,573 (172da7000) :  INFO (sandbox:19) - GEVI  - UTILS :: 2i. Art Images                ['https://www.gayeroticvideoindex.com/images/Covers/9/video33609b.jpg']
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Boys Club 1 (2000).jpg (most recent call last):
+DRAIN PATTERN: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Boys Club 1 (2000).jpg (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save shutil.move(tempfile, filename) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move copy2(src, real_dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2 copyfile(src, dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile with open(src, 'rb') as fsrc: IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Boys Club 1 (2000).jpg'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:06:35,941 (17258f000) :  DEBUG (networking:176) - Not caching 'https://www.gayeroticvideoindex.com/images/Covers/8/video18748.jpg' (content type 'image/jpeg' not cacheable in Agent plug-ins)
+   2026-02-05 18:06:35,942 (17258f000) :  INFO (sandbox:19) - GEVI  - UTILS :: Poster                         1 -
+>> 2026-02-05 18:06:36,630 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Boys Club 1 (2000).jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Boys Club 1 (2000).jpg'
+   2026-02-05 18:06:36,646 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: GEVI
+COUNT: 1
+TEMPLATE: (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Boys Club 1 (2000).jpg'
+DRAIN PATTERN: (utils:5552) - GEVI - UTILS :: Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Boys Club 1 (2000).jpg'
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:06:36,630 (17258f000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Boys Club 1 (2000).jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Boys Club 1 (2000).jpg'
+   2026-02-05 18:06:36,646 (17258f000) :  ERROR (utils:5551) - GEVI - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:06:36,647 (17258f000) :  ERROR (utils:5552) - GEVI - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Boys Club 1 (2000).jpg'
+   2026-02-05 18:06:36,647 (17258f000) :  INFO (sandbox:19) - GEVI  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GayAdultFilms
+COUNT: 2
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:25,684 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.GayAdultFilms in namespace 'metadata'
+   2026-02-05 18:10:25,687 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:10:25,690 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:10:25,690 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+================================================================================
+
+AGENT: GayAdultFilms
+COUNT: 2
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:25,687 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:10:25,690 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:10:25,690 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:10:25,693 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 22
+TEMPLATE: (utils:5551) - GayEmpire - UTILS :: ⚠ File: , Line: , Function: getSiteInfo -> _apply -> getSiteInfoGayEmpire
+DRAIN PATTERN: (utils:5551) - <*> - UTILS :: <*> File: <*> Line: <*> Function: <*> -> <*> -> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:25,404 (16e5f7000) :  INFO (sandbox:19) - GayEmpire  - UTILS :: Review Source                 N/A - 1. Absolutely Fucked...
+   2026-02-05 18:11:25,404 (16e5f7000) :  INFO (sandbox:19) - GayEmpire  - UTILS :: Review Text                   None Recorded
+>> 2026-02-05 18:11:25,404 (16e5f7000) :  ERROR (utils:5551) - GayEmpire - UTILS :: ⚠ File: , Line: , Function: getSiteInfo -> _apply -> getSiteInfoGayEmpire
+   2026-02-05 18:11:25,404 (16e5f7000) :  ERROR (utils:5552) - GayEmpire - UTILS ::    Warning: No Review Source (Used Film Title)
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 18
+TEMPLATE: (utils:5552) - GayEmpire - UTILS ::    Warning: No Review Source (Used Film Title)
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: No Review Source (Used Film Title)
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:25,404 (16e5f7000) :  INFO (sandbox:19) - GayEmpire  - UTILS :: Review Text                   None Recorded
+   2026-02-05 18:11:25,404 (16e5f7000) :  ERROR (utils:5551) - GayEmpire - UTILS :: ⚠ File: , Line: , Function: getSiteInfo -> _apply -> getSiteInfoGayEmpire
+>> 2026-02-05 18:11:25,404 (16e5f7000) :  ERROR (utils:5552) - GayEmpire - UTILS ::    Warning: No Review Source (Used Film Title)
+   2026-02-05 18:11:25,405 (16e5f7000) :  INFO (sandbox:19) - GayEmpire  - UTILS :: Chapter                       1 - 25:00
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 3
+TEMPLATE: (utils:5552) - GayEmpire - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: IAFD Lookup Disabled to prevent 403 Errors.
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:25,435 (16e5f7000) :  INFO (sandbox:19) - GayEmpire  - --------------------------------------------------------------------------------------------------------------------------------------------
+   2026-02-05 18:11:25,435 (16e5f7000) :  INFO (sandbox:19) - GayEmpire  - --------------------------------------------------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:11:25,435 (16e5f7000) :  ERROR (utils:5552) - GayEmpire - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+   2026-02-05 18:11:25,435 (16e5f7000) :  ERROR (utils:5551) - GayEmpire - UTILS :: ❌ File: , Line: , Function: update -> updateMetadata -> getFilmOnIAFD
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 3
+TEMPLATE: (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media Server/Metadata/Movies/c/2b80b710353d3d5871bd98632ea771dbceac85f.bundle/Contents/com.plexapp.agents.GayEmpire
+DRAIN PATTERN: (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:10,121 (16e5f7000) :  DEBUG (runtime:814) - Found route matching /:/plugins/com.plexapp.agents.GayEmpire/messaging/function/X0FnZW50S2l0OlVwZGF0ZU1ldGFkYXRh/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMTAKczIKZW5zNApsYW5nYjFzNQpmb3JjZWIwczgKcGVyaW9kaWNzMgo1OHM0CmRiaWRpMApzNwp2ZXJzaW9ubnMxMApwYXJlbnRHVUlEbnM4CnBhcmVudElEczUKTW92aWVzMTAKbWVkaWFfdHlwZXM0NQpjb20ucGxleGFwcC5hZ2VudHMuR2F5QWR1bHRGaWxtczovLzU4P2xhbmc9ZW5zNApndWlkczExOTIKeyJOb3JtYWxpc2VTaG9ydFRpdGxlIjogImFic29sdXRlbHlmdWNrZWQiLCAiU2hvcnRUaXRsZSI6ICJBYnNvbHV0ZWx5IEZ1Y2tlZCIsICJUaXRsZSI6ICJBYnNvbHV0ZWx5IEZ1Y2tlZCIsICJ2UmVsZWFzZURhdGUiOiAiMjAwOS0xMC0wNSAwMDowMDowMCIsICJ2RHVyYXRpb24iOiAiMTk2OS0xMi0zMSAxNzozNDowMCIsICJJQUZEU3R1ZGlvIjogIiIsICJJQUZERmlsbVVSTCI6ICIiLCAidkNvbXBpbGF0aW9uIjogIiIsICJBbGxHaXJsIjogIiIsICJpZCI6ICI1OCIsICJDb21wYXJlU2l0ZVN0dWRpbyI6ICJob3RkZXNlcnRrbmlnaHRzIiwgIlN0YXR1cyI6IGZhbHNlLCAiQ29tcGFyZUlBRkRTdHVkaW8iOiAiIiwgIklBRkRUaXRsZSI6ICJBYnNvbHV0ZWx5IEZ1Y2tlZCIsICJTdHVkaW8iOiAiSG90IERlc2VydCBLbmlnaHRzIiwgIklBRkRTZWFyY2hUaXRsZSI6ICJBYnNvbHV0ZWx5K0Z1Y2tlZCIsICJDb21wYXJlU3R1ZGlvIjogImhvdGRlc2VydGtuaWdodHMiLCAiU2NlbmVBZ2VudCI6IGZhbHNlLCAiUm90YXRpb24iOiAwLCAiRm91bmRPbklBRkQiOiAiTm8iLCAiU3RhY2tlZCI6ICJObyIsICJJQUZERHVyYXRpb24iOiAiMTk2OS0xMi0zMSAxNjowMDowMCIsICJSZWNvcmRlZFN0dWRpb3MiOiBbIipTRVQqIl0sICJDYXN0Ijoge30sICJDb21wYXJlRGF0ZSI6ICIyMDA5LTEyLTMxIDAwOjAwOjAwIiwgIkZpbG1BS0EiOiAiIiwgIlNlYXJjaFRpdGxlIjogIkFic29sdXRlbHkgRnVja2VkIiwgIkdFVklTY2VuZSI6ICIiLCAiU2VhcmNoVGl0bGVzIjogWyJBYnNvbHV0ZWx5IEZ1Y2tlZCJdLCAibGFuZyI6ICJlbiIsICJDb21wYXJlVGl0bGUiOiBbImFiY2RlZWZrbGxvc3R1dXkiXSwgIkZpbG1VUkwiOiAiaHR0cDovL3d3dy5nYXlkdmRlbXBpcmUuY29tLzE0OTg4MzkvYWJzb2x1dGVseS1mdWNrZWQtcG9ybi12aWRlb3MuaHRtbCIsICJBbGxNYWxlIjogIiIsICJTZXJpZXMiOiBbXSwgIkRpcmVjdG9ycyI6IHt9LCAiQWdlbnQiOiAiR2F5RW1waXJlIiwgIkZpbGVOYW1lIjogIihIb3QgRGVzZXJ0IEtuaWdodHMpIC0gQWJzb2x1dGVseSBGdWNrZWQgKDIwMDkpIiwgIkVwaXNvZGVzIjogW10sICJGaWxlbmFtZUNhc3QiOiBbXSwgIlllYXIiOiAyMDA5LCAiRHVyYXRpb24iOiAiMTk2OS0xMi0zMSAxNjowMDowMCIsICJJQUZENDAzRXJyIjogWyIqU0VUKiJdLCAiQ29tcGlsYXRpb24iOiAiTm8ifXMyCmlkcjAK
+   2026-02-05 18:11:10,122 (16e5f7000) :  DEBUG (model:32) - Loading model with GUID com.plexapp.agents.GayAdultFilms://58?lang=en
+>> 2026-02-05 18:11:10,123 (16e5f7000) :  ERROR (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media Server/Metadata/Movies/c/2b80b710353d3d5871bd98632ea771dbceac85f.bundle/Contents/com.plexapp.agents.GayEmpire
+   2026-02-05 18:11:10,123 (16e5f7000) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/library/metadata/58/tree'
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 1
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:51,290 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:10:51,293 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+>> 2026-02-05 18:10:51,293 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:10:51,296 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 1
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:10:51,288 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.GayEmpire in namespace 'metadata'
+   2026-02-05 18:10:51,290 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:10:51,293 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:10:51,293 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 1
+TEMPLATE: (utils:5551) - GayEmpire - SEARCH:: ❌ File: __init__.py, Line: 317, Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:24,111 (16ea03000) :  INFO (sandbox:19) - GayEmpire  -       ----------------------------------------------------------------------------------------------------
+   2026-02-05 18:11:24,111 (16ea03000) :  INFO (sandbox:19) - GayEmpire  - SEARCH:: Processing                    Page 1: 2 of 48 for Treasure Island Media - Anonymous Sex
+>> 2026-02-05 18:11:24,111 (16ea03000) :  ERROR (utils:5551) - GayEmpire - SEARCH:: ❌ File: __init__.py, Line: 317, Function: _process_function_call -> _search -> search
+   2026-02-05 18:11:24,111 (16ea03000) :  ERROR (utils:5552) - GayEmpire - SEARCH::    Error getting Site Studio: < Studio Match Failure! >
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 1
+TEMPLATE: (utils:5552) - GayEmpire - SEARCH::    Error getting Site Studio: < Studio Match Failure! >
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error <*> <*> <*> < <*> Match Failure! >
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:24,111 (16ea03000) :  INFO (sandbox:19) - GayEmpire  - SEARCH:: Processing                    Page 1: 2 of 48 for Treasure Island Media - Anonymous Sex
+   2026-02-05 18:11:24,111 (16ea03000) :  ERROR (utils:5551) - GayEmpire - SEARCH:: ❌ File: __init__.py, Line: 317, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:11:24,111 (16ea03000) :  ERROR (utils:5552) - GayEmpire - SEARCH::    Error getting Site Studio: < Studio Match Failure! >
+   2026-02-05 18:11:24,112 (16ea03000) :  INFO (sandbox:19) - GayEmpire  - UTILS :: IAFD Studio
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 1
+TEMPLATE: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Treasure Island Media) - Anonymous Sex.jpg (most recent call last):
+DRAIN PATTERN: (storage:89) - Exception writing to <*> <*> <*> <*> <*> <*> (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save shutil.move(tempfile, filename) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move copy2(src, real_dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2 copyfile(src, dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile with open(src, 'rb') as fsrc: IOError: [Errno 2] No such file or directory: <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:45,130 (16e5f7000) :  DEBUG (networking:176) - Not caching 'https://imgs1cdn.adultempire.com/products/21/1836821h.jpg' (content type 'image/jpeg' not cacheable in Agent plug-ins)
+   2026-02-05 18:11:45,131 (16e5f7000) :  INFO (sandbox:19) - GayEmpire  - UTILS :: Poster                         1 -
+>> 2026-02-05 18:11:45,651 (16e5f7000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Treasure Island Media) - Anonymous Sex.jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Treasure Island Media) - Anonymous Sex.jpg'
+   2026-02-05 18:11:45,670 (16e5f7000) :  ERROR (utils:5551) - GayEmpire - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: GayEmpire
+COUNT: 1
+TEMPLATE: (utils:5552) - GayEmpire - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Treasure Island Media) - Anonymous Sex.jpg'
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: Saving Poster to Disk: [Errno 2] No such file or directory: <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:45,651 (16e5f7000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Treasure Island Media) - Anonymous Sex.jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Treasure Island Media) - Anonymous Sex.jpg'
+   2026-02-05 18:11:45,670 (16e5f7000) :  ERROR (utils:5551) - GayEmpire - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+>> 2026-02-05 18:11:45,673 (16e5f7000) :  ERROR (utils:5552) - GayEmpire - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Treasure Island Media) - Anonymous Sex.jpg'
+   2026-02-05 18:11:45,674 (16e5f7000) :  INFO (sandbox:19) - GayEmpire  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GayFetishandBDSM
+COUNT: 15
+TEMPLATE: (utils:5551) - GayFetishandBDSM - SEARCH:: ❌ File: __init__.py, Line: 226, Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:38,735 (16e2b7000) :  INFO (sandbox:19) - GayFetishandBDSM  - UTILS :: Comparison Title List         ['abcdeefkllostuuy']
+   2026-02-05 18:11:38,735 (16e2b7000) :  INFO (sandbox:19) - GayFetishandBDSM  - UTILS :: Title Comparison Test         Failed
+>> 2026-02-05 18:11:38,788 (16e2b7000) :  ERROR (utils:5551) - GayFetishandBDSM - SEARCH:: ❌ File: __init__.py, Line: 226, Function: _process_function_call -> _search -> search
+   2026-02-05 18:11:38,789 (16e2b7000) :  ERROR (utils:5552) - GayFetishandBDSM - SEARCH::    Error getting Site Title: < Title Match Failure! >
+================================================================================
+
+AGENT: GayFetishandBDSM
+COUNT: 15
+TEMPLATE: (utils:5552) - GayFetishandBDSM - SEARCH::    Error getting Site Title: < Title Match Failure! >
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error <*> <*> <*> < <*> Match Failure! >
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:38,735 (16e2b7000) :  INFO (sandbox:19) - GayFetishandBDSM  - UTILS :: Title Comparison Test         Failed
+   2026-02-05 18:11:38,788 (16e2b7000) :  ERROR (utils:5551) - GayFetishandBDSM - SEARCH:: ❌ File: __init__.py, Line: 226, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:11:38,789 (16e2b7000) :  ERROR (utils:5552) - GayFetishandBDSM - SEARCH::    Error getting Site Title: < Title Match Failure! >
+   2026-02-05 18:11:38,789 (16e2b7000) :  INFO (sandbox:19) - GayFetishandBDSM  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GayFetishandBDSM
+COUNT: 1
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:27,432 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.GayFetishandBDSM in namespace 'metadata'
+   2026-02-05 18:11:27,435 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:11:27,437 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:11:27,438 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+================================================================================
+
+AGENT: GayFetishandBDSM
+COUNT: 1
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:27,435 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:11:27,437 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:11:27,438 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:11:27,441 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 75
+TEMPLATE: (utils:5551) - GayHotMovies - SEARCH:: ❌ File: __init__.py, Line: 296, Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:54,957 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: File Title                    Absolutely Fucked
+   2026-02-05 18:11:54,957 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: Title Comparison Test         Failed
+>> 2026-02-05 18:11:54,999 (16fe77000) :  ERROR (utils:5551) - GayHotMovies - SEARCH:: ❌ File: __init__.py, Line: 296, Function: _process_function_call -> _search -> search
+   2026-02-05 18:11:55,000 (16fe77000) :  ERROR (utils:5552) - GayHotMovies - SEARCH::    Error getting Site Title: < Title Match Failure! >
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 75
+TEMPLATE: (utils:5552) - GayHotMovies - SEARCH::    Error getting Site Title: < Title Match Failure! >
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error <*> <*> <*> < <*> Match Failure! >
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:54,957 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: Title Comparison Test         Failed
+   2026-02-05 18:11:54,999 (16fe77000) :  ERROR (utils:5551) - GayHotMovies - SEARCH:: ❌ File: __init__.py, Line: 296, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:11:55,000 (16fe77000) :  ERROR (utils:5552) - GayHotMovies - SEARCH::    Error getting Site Title: < Title Match Failure! >
+   2026-02-05 18:11:55,000 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 8
+TEMPLATE: (utils:5551) - GayHotMovies - UTILS :: ❌ File: utils.py, Line: 2834, Function: getSiteInfo -> _apply -> getSiteInfoGayHotMovies
+DRAIN PATTERN: (utils:5551) - <*> - UTILS :: <*> File: <*> Line: <*> Function: <*> -> <*> -> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:00,327 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: Cast                           4 - ['Dustin Roller', 'Jayson Park', 'Patrick Ives', 'Ray Danton']
+   2026-02-05 18:12:00,327 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  -       ----------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:12:00,332 (16fe77000) :  ERROR (utils:5551) - GayHotMovies - UTILS :: ❌ File: utils.py, Line: 2834, Function: getSiteInfo -> _apply -> getSiteInfoGayHotMovies
+   2026-02-05 18:12:00,332 (16fe77000) :  ERROR (utils:5552) - GayHotMovies - UTILS ::    Error: Getting Collections: list index out of range
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 5
+TEMPLATE: (utils:5552) - GayHotMovies - UTILS ::    Warning: No Review Source (Used Film Title)
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: No Review Source (Used Film Title)
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:00,438 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: Title                         1. Absolutely Fucked...
+   2026-02-05 18:12:00,438 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: Chapter                       1 - 25:00
+>> 2026-02-05 18:12:00,438 (16fe77000) :  ERROR (utils:5552) - GayHotMovies - UTILS ::    Warning: No Review Source (Used Film Title)
+   2026-02-05 18:12:00,438 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: Review Author                 Gay Hot Movies
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 1
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:39,267 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.GayHotMovies in namespace 'metadata'
+   2026-02-05 18:11:39,269 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:11:39,272 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:11:39,273 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 1
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:11:39,269 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:11:39,272 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:11:39,273 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:11:39,275 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 1
+TEMPLATE: (utils:5552) - GayHotMovies - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: IAFD Lookup Disabled to prevent 403 Errors.
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:00,465 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  -       ----------------------------------------------------------------------------------------------------
+   2026-02-05 18:12:00,465 (16fe77000) :  ERROR (utils:5551) - GayHotMovies - UTILS :: ❌ File: , Line: , Function: update -> updateMetadata -> getFilmOnIAFD
+>> 2026-02-05 18:12:00,465 (16fe77000) :  ERROR (utils:5552) - GayHotMovies - UTILS ::    IAFD Lookup Disabled to prevent 403 Errors.
+   2026-02-05 18:12:00,465 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - --------------------------------------------------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 1
+TEMPLATE: (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Absolutely Fucked (2009).jpg (most recent call last):
+DRAIN PATTERN: (storage:89) - Exception writing to <*> <*> <*> <*> <*> <*> <*> (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save shutil.move(tempfile, filename) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move copy2(src, real_dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2 copyfile(src, dst) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile with open(src, 'rb') as fsrc: IOError: [Errno 2] No such file or directory: <*> <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:00,599 (16fe77000) :  DEBUG (networking:176) - Not caching 'https://imgs1cdn.adultempire.com/products/23/1498323h.jpg' (content type 'image/jpeg' not cacheable in Agent plug-ins)
+   2026-02-05 18:12:00,619 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: Poster                         1 -
+>> 2026-02-05 18:12:01,131 (16fe77000) :  CRITICAL (storage:89) - Exception writing to /Volumes/internal/porn_movies/(Hot Desert Knights) - Absolutely Fucked (2009).jpg (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/storage.py", line 86, in save
+    shutil.move(tempfile, filename)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 325, in move
+    copy2(src, real_dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 153, in copy2
+    copyfile(src, dst)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/shutil.py", line 96, in copyfile
+    with open(src, 'rb') as fsrc:
+IOError: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Absolutely Fucked (2009).jpg'
+   2026-02-05 18:12:01,146 (16fe77000) :  ERROR (utils:5551) - GayHotMovies - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 1
+TEMPLATE: (utils:5552) - GayHotMovies - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Absolutely Fucked (2009).jpg'
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: Warning: Saving Poster to Disk: [Errno 2] No such file or directory: <*> <*> <*> <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:01,146 (16fe77000) :  ERROR (utils:5551) - GayHotMovies - UTILS :: ⚠ File: utils.py, Line: 7329, Function: _update -> update -> updateMetadata
+   2026-02-05 18:12:01,147 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  -       ----------------------------------------------------------------------------------------------------
+>> 2026-02-05 18:12:01,147 (16fe77000) :  ERROR (utils:5552) - GayHotMovies - UTILS ::    Warning: Saving Poster to Disk: [Errno 2] No such file or directory: '/Volumes/internal/porn_movies/._(Hot Desert Knights) - Absolutely Fucked (2009).jpg'
+   2026-02-05 18:12:01,148 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  - UTILS :: 2i. Art Images                ['https://imgs1cdn.adultempire.com/products/23/1498323bh.jpg']
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 1
+TEMPLATE: (utils:5552) - GayHotMovies - UTILS ::    Error: Getting Collections: list index out of range
+DRAIN PATTERN: (utils:5552) - <*> - UTILS :: <*> <*> <*> list index out of range
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:00,327 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  -       ----------------------------------------------------------------------------------------------------
+   2026-02-05 18:12:00,332 (16fe77000) :  ERROR (utils:5551) - GayHotMovies - UTILS :: ❌ File: utils.py, Line: 2834, Function: getSiteInfo -> _apply -> getSiteInfoGayHotMovies
+>> 2026-02-05 18:12:00,332 (16fe77000) :  ERROR (utils:5552) - GayHotMovies - UTILS ::    Error: Getting Collections: list index out of range
+   2026-02-05 18:12:00,332 (16fe77000) :  INFO (sandbox:19) - GayHotMovies  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GayHotMovies
+COUNT: 1
+TEMPLATE: (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media Server/Metadata/Movies/c/2b80b710353d3d5871bd98632ea771dbceac85f.bundle/Contents/com.plexapp.agents.GayHotMovies
+DRAIN PATTERN: (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:00,254 (16fe77000) :  DEBUG (runtime:814) - Found route matching /:/plugins/com.plexapp.agents.GayHotMovies/messaging/function/X0FnZW50S2l0OlVwZGF0ZU1ldGFkYXRh/Y2VyZWFsMQoxCmxpc3QKMApyMAo_/Y2VyZWFsMQoxCmRpY3QKMTAKczIKZW5zNApsYW5nYjFzNQpmb3JjZWIwczgKcGVyaW9kaWNzMgo1OHM0CmRiaWRpMApzNwp2ZXJzaW9ubnMxMApwYXJlbnRHVUlEbnM4CnBhcmVudElEczUKTW92aWVzMTAKbWVkaWFfdHlwZXM0NQpjb20ucGxleGFwcC5hZ2VudHMuR2F5QWR1bHRGaWxtczovLzU4P2xhbmc9ZW5zNApndWlkczExOTUKeyJOb3JtYWxpc2VTaG9ydFRpdGxlIjogImFic29sdXRlbHlmdWNrZWQiLCAiU2hvcnRUaXRsZSI6ICJBYnNvbHV0ZWx5IEZ1Y2tlZCIsICJUaXRsZSI6ICJBYnNvbHV0ZWx5IEZ1Y2tlZCIsICJ2UmVsZWFzZURhdGUiOiAiMjAwOS0xMi0zMSAwMDowMDowMCIsICJ2RHVyYXRpb24iOiAiMTk2OS0xMi0zMSAxNzozNDowMCIsICJJQUZEU3R1ZGlvIjogIiIsICJJQUZERmlsbVVSTCI6ICIiLCAidkNvbXBpbGF0aW9uIjogIiIsICJBbGxHaXJsIjogIiIsICJpZCI6ICI1OCIsICJDb21wYXJlU2l0ZVN0dWRpbyI6ICJob3RkZXNlcnRrbmlnaHRzIiwgIlN0YXR1cyI6IGZhbHNlLCAiQ29tcGFyZUlBRkRTdHVkaW8iOiAiIiwgIklBRkRUaXRsZSI6ICJBYnNvbHV0ZWx5IEZ1Y2tlZCIsICJTdHVkaW8iOiAiSG90IERlc2VydCBLbmlnaHRzIiwgIklBRkRTZWFyY2hUaXRsZSI6ICJBYnNvbHV0ZWx5K0Z1Y2tlZCIsICJDb21wYXJlU3R1ZGlvIjogImhvdGRlc2VydGtuaWdodHMiLCAiU2NlbmVBZ2VudCI6IGZhbHNlLCAiUm90YXRpb24iOiAwLCAiRm91bmRPbklBRkQiOiAiTm8iLCAiU3RhY2tlZCI6ICJObyIsICJJQUZERHVyYXRpb24iOiAiMTk2OS0xMi0zMSAxNjowMDowMCIsICJSZWNvcmRlZFN0dWRpb3MiOiBbIipTRVQqIl0sICJDYXN0Ijoge30sICJDb21wYXJlRGF0ZSI6ICIyMDA5LTEyLTMxIDAwOjAwOjAwIiwgIkZpbG1BS0EiOiAiIiwgIlNlYXJjaFRpdGxlIjogIkFic29sdXRlbHkgRnVja2VkIiwgIkdFVklTY2VuZSI6ICIiLCAiU2VhcmNoVGl0bGVzIjogWyJBYnNvbHV0ZWx5IEZ1Y2tlZCJdLCAibGFuZyI6ICJlbiIsICJDb21wYXJlVGl0bGUiOiBbImFiY2RlZWZrbGxvc3R1dXkiXSwgIkZpbG1VUkwiOiAiaHR0cHM6Ly93d3cuZ2F5aG90bW92aWVzLmNvbS8xNDk4ODM5L2Fic29sdXRlbHktZnVja2VkLXBvcm4tdmlkZW8uaHRtbCIsICJBbGxNYWxlIjogIiIsICJTZXJpZXMiOiBbXSwgIkRpcmVjdG9ycyI6IHt9LCAiQWdlbnQiOiAiR2F5SG90TW92aWVzIiwgIkZpbGVOYW1lIjogIihIb3QgRGVzZXJ0IEtuaWdodHMpIC0gQWJzb2x1dGVseSBGdWNrZWQgKDIwMDkpIiwgIkVwaXNvZGVzIjogW10sICJGaWxlbmFtZUNhc3QiOiBbXSwgIlllYXIiOiAyMDA5LCAiRHVyYXRpb24iOiAiMTk2OS0xMi0zMSAxNjowMDowMCIsICJJQUZENDAzRXJyIjogWyIqU0VUKiJdLCAiQ29tcGlsYXRpb24iOiAiTm8ifXMyCmlkcjAK
+   2026-02-05 18:12:00,254 (16fe77000) :  DEBUG (model:32) - Loading model with GUID com.plexapp.agents.GayAdultFilms://58?lang=en
+>> 2026-02-05 18:12:00,254 (16fe77000) :  ERROR (model:205) - Cannot read model from /Users/jbmiles/Library/Application Support/Plex Media Server/Metadata/Movies/c/2b80b710353d3d5871bd98632ea771dbceac85f.bundle/Contents/com.plexapp.agents.GayHotMovies
+   2026-02-05 18:12:00,255 (16fe77000) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/library/metadata/58/tree'
+================================================================================
+
+AGENT: GayMovie
+COUNT: 12
+TEMPLATE: (utils:5551) - GayMovie - SEARCH:: ❌ File: __init__.py, Line: 222, Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:15,225 (16fc4b000) :  INFO (sandbox:19) - GayMovie  - UTILS :: Title Comparison Test         Failed
+   2026-02-05 18:12:15,285 (16fc4b000) :  ERROR (utils:5552) - GayMovie - SEARCH::    Error getting Site Title: < Title Match Failure! >
+>> 2026-02-05 18:12:15,285 (16fc4b000) :  ERROR (utils:5551) - GayMovie - SEARCH:: ❌ File: __init__.py, Line: 222, Function: _process_function_call -> _search -> search
+   2026-02-05 18:12:15,286 (16fc4b000) :  INFO (sandbox:19) - GayMovie  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GayMovie
+COUNT: 12
+TEMPLATE: (utils:5552) - GayMovie - SEARCH::    Error getting Site Title: < Title Match Failure! >
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error <*> <*> <*> < <*> Match Failure! >
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:15,225 (16fc4b000) :  INFO (sandbox:19) - GayMovie  - UTILS :: Comparison Title List         ['abcdeefkllostuuy']
+   2026-02-05 18:12:15,225 (16fc4b000) :  INFO (sandbox:19) - GayMovie  - UTILS :: Title Comparison Test         Failed
+>> 2026-02-05 18:12:15,285 (16fc4b000) :  ERROR (utils:5552) - GayMovie - SEARCH::    Error getting Site Title: < Title Match Failure! >
+   2026-02-05 18:12:15,285 (16fc4b000) :  ERROR (utils:5551) - GayMovie - SEARCH:: ❌ File: __init__.py, Line: 222, Function: _process_function_call -> _search -> search
+================================================================================
+
+AGENT: GayMovie
+COUNT: 1
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:01,804 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:12:01,808 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+>> 2026-02-05 18:12:01,808 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:12:01,811 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: GayMovie
+COUNT: 1
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:01,802 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.GayMovie in namespace 'metadata'
+   2026-02-05 18:12:01,804 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:12:01,808 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:12:01,808 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+================================================================================
+
+AGENT: GayRado
+COUNT: 22
+TEMPLATE: (utils:5551) - GayRado - SEARCH:: ❌ File: __init__.py, Line: 260, Function: _process_function_call -> _search -> search
+DRAIN PATTERN: (utils:5551) - <*> - SEARCH:: <*> File: <*> Line: <*> Function: _process_function_call -> _search -> search
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:30,948 (16e583000) :  INFO (sandbox:19) - GayRado  - --------------------------------------------------------------------------------------------------------------------------------------------
+   2026-02-05 18:12:30,948 (16e583000) :  INFO (sandbox:19) - GayRado  - SEARCH:: Processing                    1 of 22 for Hot Desert Knights - Absolutely Fucked (2009)
+>> 2026-02-05 18:12:30,978 (16e583000) :  ERROR (utils:5551) - GayRado - SEARCH:: ❌ File: __init__.py, Line: 260, Function: _process_function_call -> _search -> search
+   2026-02-05 18:12:30,978 (16e583000) :  ERROR (utils:5552) - GayRado - SEARCH::    Error matching Site Entry Contents
+================================================================================
+
+AGENT: GayRado
+COUNT: 22
+TEMPLATE: (utils:5552) - GayRado - SEARCH::    Error matching Site Entry Contents
+DRAIN PATTERN: (utils:5552) - <*> - SEARCH:: Error <*> <*> <*> <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:30,948 (16e583000) :  INFO (sandbox:19) - GayRado  - SEARCH:: Processing                    1 of 22 for Hot Desert Knights - Absolutely Fucked (2009)
+   2026-02-05 18:12:30,978 (16e583000) :  ERROR (utils:5551) - GayRado - SEARCH:: ❌ File: __init__.py, Line: 260, Function: _process_function_call -> _search -> search
+>> 2026-02-05 18:12:30,978 (16e583000) :  ERROR (utils:5552) - GayRado - SEARCH::    Error matching Site Entry Contents
+   2026-02-05 18:12:30,979 (16e583000) :  INFO (sandbox:19) - GayRado  -       ----------------------------------------------------------------------------------------------------
+================================================================================
+
+AGENT: GayRado
+COUNT: 1
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:15,740 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.GayRado in namespace 'metadata'
+   2026-02-05 18:12:15,742 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:12:15,745 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:12:15,746 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+================================================================================
+
+AGENT: GayRado
+COUNT: 1
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:15,742 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:12:15,745 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:12:15,746 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:12:15,748 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: GayWorld
+COUNT: 1
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:31,478 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.GayWorld in namespace 'metadata'
+   2026-02-05 18:12:31,480 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:12:31,482 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:12:31,483 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+================================================================================
+
+AGENT: GayWorld
+COUNT: 1
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:12:31,480 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:12:31,482 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:12:31,483 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:12:31,486 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================
+
+AGENT: imdb
+COUNT: 2
+TEMPLATE: (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+DRAIN PATTERN: (networking:197) - Error opening URL <*>
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:28,925 (207042080) :  DEBUG (accessor:68) - Creating a new model access point for provider com.plexapp.agents.imdb in namespace 'metadata'
+   2026-02-05 18:09:28,927 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:09:29,177 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:09:29,182 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+================================================================================
+
+AGENT: imdb
+COUNT: 2
+TEMPLATE: (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+DRAIN PATTERN: (runtime:1299) - Exception getting hosted resource hashes (most recent call last): File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content return self.__str__() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__ self.load() File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load f = self._opener.open(req, timeout=self._timeout) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open response = meth(req, response) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response 'http', request, response, code, msg, hdrs) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error return self._call_chain(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain result = func(*args) File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default raise HTTPError(req.get_full_url(), code, msg, hdrs, fp) HTTPError: HTTP Error 404: Not Found
+----------------------------------------
+CONTEXT (Thread-Aware):
+   2026-02-05 18:09:28,927 (207042080) :  DEBUG (networking:144) - Requesting 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+   2026-02-05 18:09:29,177 (207042080) :  ERROR (networking:197) - Error opening URL 'http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes'
+>> 2026-02-05 18:09:29,182 (207042080) :  CRITICAL (runtime:1299) - Exception getting hosted resource hashes (most recent call last):
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/runtime.py", line 1293, in get_resource_hashes
+    json = self._core.networking.http_request("http://127.0.0.1:32400/:/plugins/com.plexapp.system/resourceHashes", timeout=10).content
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 243, in content
+    return self.__str__()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 221, in __str__
+    self.load()
+  File "/Applications/Plex Media Server.app/Contents/Resources/Plug-ins-2b1ba6e69/Framework.bundle/Contents/Resources/Versions/2/Python/Framework/components/networking.py", line 159, in load
+    f = self._opener.open(req, timeout=self._timeout)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/Applications/Plex Media Server.app/Contents/Resources/Python/python27.zip/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found
+   2026-02-05 18:09:29,199 (207042080) :  DEBUG (runtime:1117) - Created a thread named 'load_all_services'
+================================================================================

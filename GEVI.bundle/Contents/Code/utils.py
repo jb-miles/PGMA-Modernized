@@ -3803,12 +3803,12 @@ def getSiteInfoGEVI(AGENTDICT, FILMDICT, **kwargs):
                     elif '-' in item:                                                                               # format 2 - take year after dash:
                         items = item.split('-')
                         items = [x.strip() for x in items]
-                        if len(items[1]) == 1:              
-                            item = '{0}{1}'.format(item[0][0:2], item.split('-')[1])                                # e.g 1995-7  -> 199 + 7
+                        if len(items[1]) == 1:
+                            item = '{0}{1}'.format(items[0][0:3], items[1])                                         # e.g 1995-7  -> 199 + 7
                         elif len(items[1]) == 2:             # e.g 1995-97
-                            item = '{0}{1}'.format(item[0][0:1], item.split('-')[1])                                # e.g 1995-97 -> 19 + 97
+                            item = '{0}{1}'.format(items[0][0:2], items[1])                                         # e.g 1995-97 -> 19 + 97
                         else:
-                            item = item[1]                                                                          # eg 1995-1997 -> 1997
+                            item = items[1]                                                                         # eg 1995-1997 -> 1997
 
                     # item should now be in YY or YYYY format, if year format YY is less than the comparison date it's 1999, convert to date and add to set
                     item = item if len(item) == 4 else '{0}{1}'.format(20 if item <= compareYear else 19, item)     # pad 2 digit years with correct century

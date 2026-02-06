@@ -6586,6 +6586,14 @@ def matchTitle(filmTitle, FILMDICT, myAgent=AGENT):
         filmCompareTitle = sortAlphaChars(filmTitleNormaliseB)
         testTitle = 'Passed' if filmCompareTitle in FILMDICT['CompareTitle'] else 'Failed'
 
+    if testTitle == 'Failed':
+        normaliseTitle = FILMDICT.get('NormaliseTitle', '')
+        normaliseShortTitle = FILMDICT.get('NormaliseShortTitle', '')
+        if normaliseTitle and normaliseTitle in filmTitleNormaliseA:
+            testTitle = 'Passed (Substring)'
+        elif normaliseShortTitle and normaliseShortTitle in filmTitleNormaliseA:
+            testTitle = 'Passed (Substring)'
+
     if testTitle == 'Failed':                   # check if episode  i.e. series + number in agent title
         for item in FILMDICT['Episodes']:
             pattern = re.compile(re.escape(item), re.IGNORECASE)

@@ -224,9 +224,7 @@ class AEBN(Agent.Movies):
                         utils.log('SEARCH:: Error getting Site Studio {0}'.format(e))
 
                     if not matchedStudio:
-                        utils.log('SEARCH:: Error No Matching Site Studio')
-                        utils.log(LOG_SUBLINE)
-                        continue
+                        utils.log('SEARCH:: Warning No Matching Site Studio - will use as fallback')
 
                     # Site Release Date
                     utils.log(LOG_BIGLINE)
@@ -279,7 +277,8 @@ class AEBN(Agent.Movies):
                     del FILMDICT['FilmHTML']
 
                     myID = json.dumps(FILMDICT, default=utils.jsonDumper)
-                    results.Append(MetadataSearchResult(id=myID, name=FILMDICT['Title'], score=100, lang=lang))
+                    myScore = 100 if matchedStudio else 86
+                    results.Append(MetadataSearchResult(id=myID, name=FILMDICT['Title'], score=myScore, lang=lang))
 
                     # Film Scraped Sucessfully - update status and break out!
                     FILMDICT['Status'] = True
