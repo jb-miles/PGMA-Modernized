@@ -120,6 +120,40 @@ PlexSupportPath = Core.app_support_path
 PlexLoadFile = Core.storage.load
 PlexSaveFile = Core.storage.save
 
+# ----------------------------------------------------------------------------------------------------------------------------------
+def SafeSaveFile(filename, data):
+    """Save data using Plex storage, then fallback to direct binary write if Plex temp-file save fails."""
+    try:
+        PlexSaveFile(filename, data)
+        return
+    except Exception as e:
+        log('UTILS :: Warning: PlexSaveFile fallback for {0}: {1}'.format(filename, e))
+
+    tempFile = '{0}.tmp'.format(filename)
+    try:
+        folder = os.path.dirname(filename)
+        if folder and not os.path.isdir(folder):
+            os.makedirs(folder)
+
+        payload = data
+        try:
+            if isinstance(payload, unicode):
+                payload = payload.encode('utf-8')
+        except NameError:
+            pass
+
+        with open(tempFile, 'wb') as f:
+            f.write(payload)
+
+        if os.path.exists(filename):
+            os.remove(filename)
+        os.rename(tempFile, filename)
+    except Exception:
+        if os.path.exists(tempFile):
+            os.remove(tempFile)
+        raise
+
+
 # log section separators
 LOG_BIGLINE = '-' * 140
 LOG_SUBLINE = '      ' + '-' * 100
@@ -6786,7 +6820,7 @@ def updateMetadata(metadata, media, lang, force=True):
                     extension = item.split('.')[-1].split('?')[0]
                     filename = os.path.splitext(media.items[0].parts[0].file)[0]
                     downloadPoster = '{0}.{1}'.format(filename, extension)
-                    PlexSaveFile(downloadPoster, imageContent)
+                    SafeSaveFile(downloadPoster, imageContent)
 
             except Exception as e:
                 log('UTILS :: Error setting Poster: {0}'.format(e))         # do not fail scrape if poster can not be set

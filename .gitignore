@@ -25,3 +25,7 @@ __pycache__/
 *.pyo
 *.egg-info/
 .pytest_cache/
+
+# Generated reports
+/consolidated_plex_logs_*.txt
+repairs/progress/consolidated_plex_logs_*.txt
